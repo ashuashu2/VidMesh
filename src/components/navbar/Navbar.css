@@ -1,0 +1,70 @@
+
+.main-navbar-div{
+    display: flex;
+    height: 17vh;
+    box-shadow: 0px 0.2px 0px 0px;
+
+}
+.logo{
+    border-radius: 50%;
+    margin: 1.5rem;
+    margin-right: 0.5rem;
+    height: 60%;
+    margin-top: 1rem;
+    
+}
+.nav-logo-side{
+    display: flex;
+    text-decoration: none;
+}
+.logo-text{
+    margin-left: 0.2rem;
+    color: white;
+    font-size: 2.2rem;
+}
+.logo-span-text{
+    color: red;
+}
+.login-button{
+    height: 5vh;
+    cursor: pointer;   
+
+    font-size: 1.2rem;
+    margin: 2rem;
+    margin-left: 1.3rem;
+    background-color: red;
+    color: white;
+    padding: 0.5rem;
+    padding-bottom: 1.8rem;
+    border-radius: 10%;
+   
+
+
+}
+
+.nav-search{
+    margin-top: 2.3rem;
+    
+    height: 2.6vh;
+    width: 23rem;
+
+}
+.search-div{
+margin-left: 15%;
+}
+.left-side-div{
+    display: flex;
+    margin: 2rem;
+    margin-left: auto;
+    margin-top: -0.2rem;
+    
+}
+.left-side-icon{
+    margin: 2rem;
+    margin-left: 1.3rem;
+
+
+}
+.left-side-icon:hover{
+cursor: pointer;    
+}

@@ -1,0 +1,12 @@
+.video-listing-div{
+    display: flex;
+    max-width: 100%;
+}
+.sideBar-div{
+    width: 5%;
+    /* margin-top: 5rem; */
+}
+.videoStore-div{
+    width: 95%;
+    margin-left: 2rem;
+}

@@ -1,0 +1,22 @@
+.side-icon-div{
+    text-align: center;
+    margin-left: 1rem;
+
+    margin: 2rem;
+    box-shadow: 0.2px 0px 0px 0px;
+
+    
+    padding-right: 8rem;
+
+}
+
+.side-icon{
+    font-size: 1.5rem;
+    margin-bottom: -1.6rem;
+    margin-left: 0.5rem;
+
+}
+.side-icon-text{
+    font-size: 0.9rem;
+    font-weight: bolder;
+}

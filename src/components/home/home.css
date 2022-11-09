@@ -1,0 +1,40 @@
+.home-main-div{
+    display: flex;
+    max-width:  100%;
+
+    text-align: center;
+    margin-top: 3rem;
+
+
+    
+}
+.home-right-div{
+    font-size: 1.3rem;
+    width: 50%;
+        margin-right: 5rem;
+
+}
+.home-left-div{
+    width: 50%;
+    margin-right: 2rem;
+
+}
+.home-banner{
+    width: 100%;
+    height: 70vh;
+    margin-left: -5rem;
+
+}
+.welcome-text{
+    color: red;
+}
+.home-button{
+
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    background-color:red;
+    color: white;
+    padding: 0.6rem;
+    border-radius: 10%;
+
+}
