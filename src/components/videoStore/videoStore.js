@@ -3,8 +3,9 @@ import { GoVerified } from 'react-icons/go';
 
 import "../videoStore/videoStore.css"
 import { useVideos } from "../../context/videosContext"
+import { Link } from 'react-router-dom';
 function VideoStore() {
-  const {home} = useVideos()
+  const {videos} = useVideos()
   return (
   <div>
 
@@ -35,13 +36,22 @@ function VideoStore() {
 
 
       {
-        home.map((video)=>(
+        videos.map((video)=>(
           <div className='content-div' >
+            <Link to={`/VideoDetail/${video._id}`}><img  className='thumbnail-pic' src={`https://i.ytimg.com/vi/${video._id}/hqdefault.jpg`} /> </Link>
         
-        <img  className='thumbnail-pic' src={`https://i.ytimg.com/vi/${video._id}/hqdefault.jpg`} />
-        <p>{video.description}</p>
-            <small>{video.title}<GoVerified /></small>
-            <div><small>{video.views}  /   {video.date}</small></div>
+        
+        <div className="content2-div">
+          <p className='video-description'>{video.description}</p>
+          <div className='content3-div'>
+            
+            <small>{video.title} <span><GoVerified /></span></small>
+            <div><small>{`${video.views}views `}    /   {video.date}</small></div>
+            </div>
+            
+            
+            </div>
+        
             
 
           

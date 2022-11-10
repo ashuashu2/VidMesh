@@ -12,7 +12,7 @@ export const videos =[
   {
     _id: "JZk6T1TmIrs",
    
-    views:"1M views",
+    views:"1M ",
     date:"21 Dec 2021",
     title: "Pushkar Raj Thakur: Business Coach",
     src: "https://www.youtube.com/embed/JZk6T1TmIrs",
@@ -24,7 +24,7 @@ export const videos =[
   {
     _id: "jV68yMnH01o",
    
-    views:"905K views",
+    views:"905K ",
     date:"15 mar 2017",
     title: "Tech Burner",
     src: "https://www.youtube.com/embed/jV68yMnH01o",
@@ -36,7 +36,7 @@ export const videos =[
   {
     _id: "1_3ROas99gY",
    
-    views:"406K views",
+    views:"406K ",
     date:"30 Aug 2020",
     title: "Sandeep Maheshwari",
     src: "https://www.youtube.com/embed/1_3ROas99gY",
@@ -48,7 +48,7 @@ export const videos =[
   {
     _id: "PFN8dGDT0ZA",
    
-    views:"5.3M views",
+    views:"5.3M ",
     date:"15 mar 2017",
     title: "SONU SHARMA",
     src: "https://www.youtube.com/embed/PFN8dGDT0ZA",
@@ -60,7 +60,7 @@ export const videos =[
   {
     _id: "8qMgYxMULXA",
    
-    views:"6.4M views",
+    views:"6.4M ",
     date:"24 Apr 2019",
     title: "GNF Learning",
     src: "https://www.youtube.com/embed/8qMgYxMULXA",
@@ -70,7 +70,7 @@ export const videos =[
   {
     _id: "mprtBRlx6mY",
    
-    views:"641K views",
+    views:"641K ",
     date:"15 Sep 2019",
     title: "Thomas Kralow",
     src: "https://www.youtube.com/embed/mprtBRlx6mY",
@@ -85,7 +85,7 @@ export const videos =[
   {
     _id: "cCOL7MC4Pl0",
    
-    views:"2.2M views",
+    views:"2.2M ",
     date:"15 mar 2017",
     title: "Jake Archibald",
     src: "https://www.youtube.com/embed/cCOL7MC4Pl0",
@@ -97,7 +97,7 @@ export const videos =[
   {
     _id: "dpw9EHDh2bM",
    
-    views:"1.8K views",
+    views:"1.8K ",
     date:"30 May 2022",
     title: "React Conf",
     src: "https://www.youtube.com/embed/dpw9EHDh2bM",
@@ -109,7 +109,7 @@ export const videos =[
   {
     _id: "xu87YWbr4X0",
    
-    views:" 7.7M views",
+    views:" 7.7M ",
     date:"30 Apr 2019",
     title: "Wes Bos",
     src: "https://www.youtube.com/embed/xu87YWbr4X0",
@@ -121,7 +121,7 @@ export const videos =[
   {
     _id: "0if71HOyVjY",
    
-    views:"624K views",
+    views:"624K ",
     date:"25 Aug 2020",
     title: "Russ Olsen",
     src: "https://www.youtube.com/embed/0if71HOyVjY",
@@ -133,7 +133,7 @@ export const videos =[
   {
     _id: "8aGhZQkoFbQ",
    
-    views:"2.8M views",
+    views:"2.8M ",
     date:"13 Jul 2019",
     title: "JSConf",
     src: "https://www.youtube.com/embed/8aGhZQkoFbQ",
@@ -149,7 +149,7 @@ export const videos =[
    {
     _id: "AqFGlqNhkFk",
    
-    views:"641K views",
+    views:"641K ",
     date:"26 Jun 2021",
     title: "Dr. Anil Lamba ",
     src: "https://www.youtube.com/embed/AqFGlqNhkFk",
@@ -161,7 +161,7 @@ export const videos =[
   {
     _id: "Xn7KWR9EOGQ",
    
-    views:"248K views",
+    views:"248K ",
     date:"27 mar 2019",
     title: "CA Rachna",
     src: "https://www.youtube.com/embed/Xn7KWR9EOGQ",
@@ -173,7 +173,7 @@ export const videos =[
   {
     _id: "LknADkbbekc",
    
-    views:"248K views",
+    views:"248K ",
     date:"15 mar 2017",
     title: "Sandeep Maheshwari",
     src: "https://www.youtube.com/embed/LknADkbbekc",
@@ -184,7 +184,7 @@ export const videos =[
   {
     _id: "3peil4If_BA",
    
-    views:"",
+    views:"25M",
     date:"23 May 2020",
     title: "Pushkar Raj Thakur: Business Coach",
     src: "https://www.youtube.com/embed/3peil4If_BA",
@@ -196,7 +196,7 @@ export const videos =[
   {
     _id: "PX5-XyBNi00",
    
-    views:"857K views",
+    views:"857K ",
     date:"26 Jun 2021",
     title: "Motivation Madness",
     src: "https://www.youtube.com/embed/PX5-XyBNi00",
@@ -210,7 +210,7 @@ export const videos =[
    {
     _id: "qkxuFKqJXWY",
    
-    views:"857K views",
+    views:"857K ",
     date:"13 june 2017",
     title: "Anubhav Singh Bassi",
     src: "https://www.youtube.com/embed/qkxuFKqJXWY",
@@ -221,7 +221,7 @@ export const videos =[
   {
     _id: "8f3e6rXB8Cw",
    
-    views:"374K views",
+    views:"374K ",
     date:"03 Dec 2018",
     title: "Harsh gujral",
     src: "https://www.youtube.com/embed/8f3e6rXB8Cw",
@@ -235,7 +235,7 @@ export const videos =[
   {
     _id: "MLdXYEWTC1k",
    
-    views:"4.6M views",
+    views:"4.6M ",
     date:"15 Jan 2019",
     title: "Zakir khan ",
     src: "https://www.youtube.com/embed/MLdXYEWTC1k",
@@ -246,7 +246,7 @@ export const videos =[
   {
     _id: "m89P-tsA65c",
    
-    views:"7.2M views",
+    views:"7.2M ",
     date:"07 Aug 2012",
     title: "Kapil Sharma  ",
     src: "https://www.youtube.com/embed/m89P-tsA65c",
@@ -257,7 +257,7 @@ export const videos =[
   {
     _id: "c7QYEedjb_o",
    
-    views:"3.7M views",
+    views:"3.7M ",
     date:"26 Jun 2021",
     title: " ABHISHEK UPMANYU  ",
     src: "https://www.youtube.com/embed/c7QYEedjb_o",

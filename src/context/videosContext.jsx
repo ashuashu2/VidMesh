@@ -5,16 +5,16 @@ import { useState ,useEffect} from "react";
 const VideosContext = createContext()
 const VideosProvider =({children})=>{
 
-    const [home,setHome] = useState([])
+    const [videos,setVideos] = useState([])
     useEffect(() => {
         return (async function () {
           const response = await axios.get("/api/videos");
-          setHome(response.data.videos);
+          setVideos(response.data.videos);
           
         })();
       }, []);
     return(
-        <VideosContext.Provider value={{home,setHome}}>
+        <VideosContext.Provider value={{videos,setVideos}}>
             {children}
         </VideosContext.Provider>
     )

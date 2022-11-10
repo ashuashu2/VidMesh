@@ -5,6 +5,8 @@ import { MdExplore} from 'react-icons/md';
 import { BsFillStopwatchFill} from 'react-icons/bs';
 import { CgPlayListAdd } from 'react-icons/cg';
 import { RiChatHistoryFill} from 'react-icons/ri';
+import { MdWatchLater } from 'react-icons/md';
+
 
 
 
@@ -34,7 +36,7 @@ return (
 
 
   <div>
-    <h3 className="side-icon"><BsFillStopwatchFill /> </h3>
+    <h3 className="side-icon"><MdWatchLater />  </h3>
     <h6 className="side-icon-text">WatchLater</h6>
 
 
