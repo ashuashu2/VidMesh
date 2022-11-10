@@ -47,7 +47,6 @@ margin: 2rem;
 margin: 1rem;
 }
 .subscriber2-div{
-    max-resolution: 0.5rem;
    
 }
 .comment-input{
@@ -86,7 +85,27 @@ margin-top: 1.1rem;
     color: white;
     text-decoration: none;
     list-style: none;
+    display: flex;
     
-   
- 
-}
+   }
+   .initial-comments{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 2.5rem;
+    margin-top: -1.1rem;
+    
+   }
+
+   .comment-banner{
+    height: 50px;
+    width: 50px;
+    border-radius: 3rem;
+
+   }
+   .comments{
+margin: 1.1rem;
+   }
+   .comments-middle-div{
+    margin-left: -5rem;
+   }
