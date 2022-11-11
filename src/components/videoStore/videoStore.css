@@ -61,3 +61,8 @@ flex-direction: column;
 justify-content: space-between;
 
 }
+.showing-result-para{
+margin-left: 5rem;
+font-size: 1.2rem;
+/* color: red; */
+}

@@ -19,6 +19,7 @@ function VideoStore() {
 
 
       </div>
+     
 
 
       <div className='right-side-buttons-div'>
@@ -30,9 +31,14 @@ function VideoStore() {
 
 
     </div>
+    <p className='showing-result-para'> Showing Results: {videos.length} </p>
+    
+    
+
 
 
     <div className='videos-container'>
+   
 
 
       {

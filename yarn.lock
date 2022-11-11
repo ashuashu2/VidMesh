@@ -1118,6 +1118,11 @@
     "minimatch" "^3.0.4"
     "strip-json-comments" "^3.1.1"
 
+"@faker-js/faker@^7.6.0":
+  "integrity" "sha512-XK6BTq1NDMo9Xqw/YkYyGjSsg44fbNwYRx7QK2CuoQgyy+f1rrTDHoExVM5PsyXCtfl2vs2vVJ0MN0yN6LppRw=="
+  "resolved" "https://registry.npmjs.org/@faker-js/faker/-/faker-7.6.0.tgz"
+  "version" "7.6.0"
+
 "@gar/promisify@^1.0.1":
   "integrity" "sha512-82cpyJyKRoQoRi+14ibCeGPu0CwypgtBAdBhq1WfvagpCZNKqwXbKwXllYSMG91DhmG4jt9gN8eP6lGOtozuaw=="
   "resolved" "https://registry.npmjs.org/@gar/promisify/-/promisify-1.1.2.tgz"
@@ -1787,10 +1792,24 @@
   "resolved" "https://registry.npmjs.org/@types/prettier/-/prettier-2.4.3.tgz"
   "version" "2.4.3"
 
+"@types/prop-types@*":
+  "integrity" "sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w=="
+  "resolved" "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz"
+  "version" "15.7.5"
+
 "@types/q@^1.5.1":
   "integrity" "sha512-L28j2FcJfSZOnL1WBjDYp2vUHCeIFlyYI/53EwD/rKUBQ7MtUUfbQWiyKJGpcnv4/WgrhWsFKrcPstcAt/J0tQ=="
   "resolved" "https://registry.npmjs.org/@types/q/-/q-1.5.5.tgz"
   "version" "1.5.5"
+
+"@types/react@^16.14.1":
+  "integrity" "sha512-b99nWeGGReLh6aKBppghVqp93dFJtgtDOzc8NXM6hewD8PQ2zZG5kBLgbx+VJr7Q7WBMjHxaIl3dwpwwPIUgyA=="
+  "resolved" "https://registry.npmjs.org/@types/react/-/react-16.14.34.tgz"
+  "version" "16.14.34"
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/scheduler" "*"
+    "csstype" "^3.0.2"
 
 "@types/resolve@0.0.8":
   "integrity" "sha512-auApPaJf3NPfe18hSoJkp8EbZzer2ISk7o8mCC3M9he/a04+gbMF97NkpD2S8riMGvm4BMRI59/SZQSaLTKpsQ=="
@@ -1798,6 +1817,11 @@
   "version" "0.0.8"
   dependencies:
     "@types/node" "*"
+
+"@types/scheduler@*":
+  "integrity" "sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew=="
+  "resolved" "https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.2.tgz"
+  "version" "0.16.2"
 
 "@types/source-list-map@*":
   "integrity" "sha512-K5K+yml8LTo9bWJI/rECfIPrGgxdpeNbj+d53lwN4QjW1MCwlkhUms+gtdzigTeUyBr09+u8BwOIY3MXvHdcsA=="
@@ -3970,6 +3994,11 @@
   "version" "2.3.0"
   dependencies:
     "cssom" "~0.3.6"
+
+"csstype@^3.0.2":
+  "integrity" "sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw=="
+  "resolved" "https://registry.npmjs.org/csstype/-/csstype-3.1.1.tgz"
+  "version" "3.1.1"
 
 "ctype@0.5.3":
   "integrity" "sha512-T6CEkoSV4q50zW3TlTHMbzy1E5+zlnNcY+yb7tWVYlTwPhx9LpnfAkd4wecpWknDyptp4k97LUZeInlf6jdzBg=="
@@ -6436,6 +6465,14 @@
   "resolved" "https://registry.npmjs.org/isobject/-/isobject-3.0.1.tgz"
   "version" "3.0.1"
 
+"isomorphic-fetch@^3.0.0":
+  "integrity" "sha512-qvUtwJ3j6qwsF3jLxkZ72qCgjMysPzDfeV240JHiGZsANBYd+EEuu35v7dfrJ9Up0Ak07D7GGSkGhCHTqg/5wA=="
+  "resolved" "https://registry.npmjs.org/isomorphic-fetch/-/isomorphic-fetch-3.0.0.tgz"
+  "version" "3.0.0"
+  dependencies:
+    "node-fetch" "^2.6.1"
+    "whatwg-fetch" "^3.4.1"
+
 "istanbul-lib-coverage@^3.0.0", "istanbul-lib-coverage@^3.2.0":
   "integrity" "sha512-eOeJ5BHCmHYvQK7xt9GkdHuzuCGS1Y6g9Gvnx3Ym33fz/HpLRYxiS0wHNr+m/MBC8B647Xt608vCDEvhl9c6Mw=="
   "resolved" "https://registry.npmjs.org/istanbul-lib-coverage/-/istanbul-lib-coverage-3.2.0.tgz"
@@ -7920,7 +7957,7 @@
     "lower-case" "^2.0.2"
     "tslib" "^2.0.3"
 
-"node-fetch@2.6.7":
+"node-fetch@^2.6.1", "node-fetch@2.6.7":
   "integrity" "sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ=="
   "resolved" "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz"
   "version" "2.6.7"
@@ -9641,6 +9678,15 @@
   "integrity" "sha512-mKR90fX7Pm5seCOfz8q9F+66VCc1PGsWSBxKbITjfKVQHMNF2zudxHnMdJiB1fRCb+XsbQV9sO9DCkgsMQgBIA=="
   "resolved" "https://registry.npmjs.org/react-error-overlay/-/react-error-overlay-6.0.10.tgz"
   "version" "6.0.10"
+
+"react-fakers@^1.0.3-rc1":
+  "integrity" "sha512-wospw2Vf5WCi9dr7T6WdqJrOobVu8alSrXLYdw9VstZ+J5wr+6XK9foYJQH5TNHYSTfwTWIwdckCmbxZIceM/g=="
+  "resolved" "https://registry.npmjs.org/react-fakers/-/react-fakers-1.0.3-rc1.tgz"
+  "version" "1.0.3-rc1"
+  dependencies:
+    "@types/react" "^16.14.1"
+    "isomorphic-fetch" "^3.0.0"
+    "prop-types" "^15.7.2"
 
 "react-icons@^4.6.0":
   "integrity" "sha512-rR/L9m9340yO8yv1QT1QurxWQvWpbNHqVX0fzMln2HEb9TEIrQRGsqiNFQfiv9/JEUbyHmHPlNTB2LWm2Ttz0g=="

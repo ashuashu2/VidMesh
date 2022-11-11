@@ -1,5 +1,5 @@
 .App {
-  /* text-align: center; */
+  text-align: center;
  
 }
 body{
@@ -12,6 +12,16 @@ button{
   cursor: pointer;
 }
 
+.main-container{
+  display: flex;
+}
+
+
+
+.sideBar-home-div{
+  width: 8%;
+
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
