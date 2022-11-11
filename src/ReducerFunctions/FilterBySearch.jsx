@@ -4,11 +4,10 @@ function FilterBySearch(videos,value) {
    
     
     if(value){
-      return videos.filter(item => item.description.toLowerCase().includes(value) )
+      return videos.filter(item => item.description.toUppeCase().includes(value) )
       }else{
-        videos.filter(item => item.description.toUpperCase().includes(value) )
-      }return videos
-
+          return videos
+      }
   }
 
 export { FilterBySearch}
