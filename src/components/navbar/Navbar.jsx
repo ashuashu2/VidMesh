@@ -5,11 +5,15 @@ import { BsSearch } from "react-icons/bs";
 import { IoIosNotificationsOutline } from "react-icons/io"
 import { CgProfile } from "react-icons/cg"
 import { Link } from "react-router-dom"
+import { useFilter } from "../../context/FilterContext";
 
 
 
 
 function Navbar(){
+
+    const {FilterState,FilterDispatch} = useFilter()
+
     return(
         <div className="main-navbar-div">
             
@@ -20,8 +24,8 @@ function Navbar(){
             
             <div className="search-div">
                 <div>
-                    <input className="nav-search" type="text" />
-                    <button> <BsSearch /> </button>
+                    <input  placeholder="Search your Videos" onChange={(event)=> FilterDispatch({type:"SEARCH",payload:event.target.value}) } className="nav-search" type="text" />
+                    {/* <button> <BsSearch /> </button> */}
                 </div>
             </div>
             <div className="left-side-div">

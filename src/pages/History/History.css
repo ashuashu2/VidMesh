@@ -1,0 +1,31 @@
+.history-video-div{
+    margin-left: 5rem;
+    margin-top: 3rem;
+
+}
+.history-video-div2{
+    display: flex;
+    border: 2px solid white;
+    position: relative;
+   
+    height: 40vh;
+
+    margin: 2rem;
+
+
+}
+.history-video-image{
+    height: 40vh;
+    margin-left: 0.5rem;
+}
+.history-video-content{
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+.delete-icon{
+    font-size: 2rem;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    
+}

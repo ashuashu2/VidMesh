@@ -6,6 +6,10 @@ import { makeServer } from "./server";
 import { VideosProvider } from "./context/videosContext";
 import {BrowserRouter } from "react-router-dom"
 import { CommentProvider } from "./context/commentsContext";
+import { WatchLaterProvider } from "./context/WatchLaterContext";
+import { HistoryProvider } from "./context/HistoryContext";
+import { LikesProvider } from "./context/LikesContext";
+import { FilterProvider } from "./context/FilterContext";
 
 
 
@@ -14,6 +18,10 @@ makeServer();
 
 ReactDOM.render(
   <React.StrictMode>
+    <FilterProvider>
+    <LikesProvider>
+    <HistoryProvider>
+    <WatchLaterProvider>
     <CommentProvider >
     <VideosProvider>
       <BrowserRouter>
@@ -21,6 +29,10 @@ ReactDOM.render(
     </BrowserRouter>
     </VideosProvider>
     </CommentProvider>
+    </WatchLaterProvider>
+    </HistoryProvider>
+    </LikesProvider>
+    </FilterProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

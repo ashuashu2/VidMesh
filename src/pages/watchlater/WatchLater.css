@@ -1,0 +1,29 @@
+.WatchLater-video-div{
+    margin-left: 5rem;
+    margin-top: 3rem;
+}
+.WatchLater-video-div2{
+    display: flex;
+    border: 2px solid white;
+    position: relative;
+
+    height: 40vh;
+    margin: 2rem;
+
+
+}
+.WatchLater-video-image{
+    height: 40vh;
+    margin-left: 0.5rem;
+}
+.WatchLater-video-content{
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+.delete2-icon{
+    font-size: 2rem;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    
+}

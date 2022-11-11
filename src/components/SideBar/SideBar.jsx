@@ -51,17 +51,12 @@ return (
       <MdWatchLater />
     </h3>
     <h6 className="side-icon-text side-icon-text2">WatchLater</h6>
-
-
   </div>
   </Link>
 
 
 
-
-
-
-
+  <Link className="side-bar-links" to="/PlayList">
   <div>
     <h3 className="side-icon">
       <CgPlayListAdd />
@@ -69,10 +64,9 @@ return (
     <h6 className="side-icon-text">PlayLists</h6>
 
   </div>
+  </Link>
 
-
-
-
+  <Link className="side-bar-links" to="/Likes">
   <div>
     <h3 className="side-icon">
       <AiFillLike />
@@ -81,15 +75,27 @@ return (
 
 
   </div>
+  
+  </Link>
 
-  <div>
-    <h5 className="side-icon">
+
+
+<Link className="side-bar-links" to="/History">
+   <div>
+    <h3 className="side-icon">
       <RiChatHistoryFill />
-    </h5>
+    </h3>
 
     <h6 className="side-icon-text">History</h6>
 
   </div>
+
+</Link>
+
+
+  
+
+
 
 
 </div>
