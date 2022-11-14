@@ -10,6 +10,7 @@ import { WatchLaterProvider } from "./context/WatchLaterContext";
 import { HistoryProvider } from "./context/HistoryContext";
 import { LikesProvider } from "./context/LikesContext";
 import { FilterProvider } from "./context/FilterContext";
+import { AuthProvider } from "./context/AuthContext";
 
 
 
@@ -18,6 +19,7 @@ makeServer();
 
 ReactDOM.render(
   <React.StrictMode>
+    <AuthProvider>
     <FilterProvider>
     <LikesProvider>
     <HistoryProvider>
@@ -33,6 +35,8 @@ ReactDOM.render(
     </HistoryProvider>
     </LikesProvider>
     </FilterProvider>
+    </AuthProvider>
+  
   </React.StrictMode>,
   document.getElementById("root")
 );

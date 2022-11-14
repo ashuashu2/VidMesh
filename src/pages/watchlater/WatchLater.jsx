@@ -17,6 +17,8 @@ function WatchLater() {
   const { WatchLaterState : { WatchLater }} = useWatchLater()
   return (
     <div>
+      <div> Showing Results: <small>{WatchLater.length}</small> </div>
+
       <div className='WatchLater-video-div'> { WatchLater.map((video)=>(
         <div className='WatchLater-video-div2'> 
           <div>
@@ -28,7 +30,7 @@ function WatchLater() {
           <p className='video-description'  >{video.description}</p>
           <small>{video.title} <span><GoVerified /></span></small>
           <div ><small>{`${video.views}views `}    /   {video.date}</small></div>
-          <div onClick={()=> WatchLaterDispatch({type: "REMOVE_FROM_WATCHLATER",payload: video,})}className='delete2-icon'> <AiFillDelete /> </div>
+          <div onClick={()=> WatchLaterDispatch({type: "REMOVE_FROM_WATCHLATER",payload: video,})}className='delete-icon'> <AiFillDelete /> </div>
 
 
 

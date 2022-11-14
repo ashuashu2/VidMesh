@@ -8,7 +8,8 @@ const FilterProvider = ({children})=>{
     
     const [FilterState,FilterDispatch]=useReducer(FilterReducer ,{
     Category:"",
-    Search:""
+    Search:"",
+    SortBy:"LATEST_FIRST"
 })
 
 

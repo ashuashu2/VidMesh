@@ -68,3 +68,8 @@ margin-left: 15%;
 .left-side-icon:hover{
 cursor: pointer;    
 }
+.navbar-links-button{
+    color: white;
+    text-decoration: none;
+    
+}

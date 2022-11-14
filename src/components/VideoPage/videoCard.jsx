@@ -1,6 +1,8 @@
 import React, { useState,useEffect } from "react";
 import "../VideoPage/videoCard.css"
 import {AiFillLike} from 'react-icons/ai';
+import { toast } from 'react-toastify';
+
 
 import { CgPlayListAdd } from 'react-icons/cg';
 import { MdWatchLater } from 'react-icons/md';
@@ -45,12 +47,13 @@ return (
         </h1>
 
 
-        <h1 onClick={()=> WatchLaterDispatch({type: "ADD_TO_WATCHLATER",payload: video,})} className="click-button">
+        <h1 onClick={()=> WatchLaterDispatch({type: "ADD_TO_WATCHLATER",payload: video,})
+        } className="click-button">
           <MdWatchLater />
         </h1>
 
 
-        <h1    className="click-button">
+        <h1 className="click-button">
           <CgPlayListAdd />
         </h1>
       </div>

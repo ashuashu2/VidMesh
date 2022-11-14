@@ -16,6 +16,7 @@ function History() {
   const { HistoryState : { History }} = useHistory()
   return (
     <div>
+      <div> Showing Results: <small>{History.length}</small> </div>
       <div className='history-video-div'> { History.map((video)=>(
         <div className='history-video-div2'> 
           <div>

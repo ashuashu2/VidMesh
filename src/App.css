@@ -22,6 +22,9 @@ button{
   width: 8%;
 
 }
+.routes-div{
+  width: 92%;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

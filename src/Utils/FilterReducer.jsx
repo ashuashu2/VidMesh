@@ -16,6 +16,9 @@ switch(action.type){
 
           case "SEARCH":
           return{...FilterState,Search:action.payload} 
+
+          case "SORTBY":
+          return{...FilterState,SortBy:action.payload} 
     
 
 

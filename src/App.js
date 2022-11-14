@@ -1,7 +1,7 @@
 import "./App.css";
 import { Home } from "./components/home/Home";
 import { Navbar } from "./components/navbar/Navbar"
-import {Route, Routes} from "react-router-dom"
+import {Route, Routes, useLocation} from "react-router-dom"
 import { VideoListing } from "./components/videosListing/VideoListing";
 import { VideoDetail } from "./components/VideoPage/videoPage";
 import { Footer } from "./components/footer/footer";
@@ -12,15 +12,28 @@ import { Likes } from "./pages/Likes/Likes";
 import { Login } from "./pages/Authentication/Login";
 import { Signup } from "./pages/Authentication/Signup";
 import { PlayList } from "./pages/playLists/PlayList";
-import { useLikes } from "./context/LikesContext";
-import { useHistory } from "./context/HistoryContext";
+import 'react-toastify/dist/ReactToastify.css';
+
+
+import { Error404 } from "./pages/Error 404/ErrorRoute";
+import { ToastContainer } from "react-toastify";
+import { RequiresAuth } from "./pages/Authentication/RequireAuth";
+import { useAuth } from "./context/AuthContext";
 function App() {
+  const location = useLocation();
+  const { isLoggedIn } = useAuth()
 
-  // const {LikesState} = useLikes()
-  // const {HistoryState} = useHistory()
 
-  // console.log(LikesState.Likes.length)
-  // console.log(HistoryState.History.length)
+
+
+
+
+  
+
+
+
+
+
 
   return (
     <div className="App">
@@ -29,23 +42,26 @@ function App() {
 
       <div className="main-container">
       <div className="sideBar-home-div">
-        <div>
+
+       
             <SideBar />
-        </div>
+       
     </div>
 
 
-        <div>  
-          <Routes>
+        <div className="routes-div">  
+           <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/VideoListing" element={<VideoListing />} />
       <Route path="/VideoDetail/:videoId" element={<VideoDetail />} />
-      <Route path="/WatchLater" element={<WatchLater />} />
-      <Route path="/History" element={<History />} />
-      <Route path="/Likes" element={<Likes />} />
-      <Route path="/PlayList" element={<PlayList /> } />
+      <Route path="/WatchLater" element={ <RequiresAuth> {<WatchLater /> } </RequiresAuth>  } />
+      <Route path="/History" element={ <RequiresAuth> {<History />  } </RequiresAuth>   } />
+      <Route path="/Likes" element={<RequiresAuth> {<Likes />  } </RequiresAuth>  } />
+      <Route path="/PlayList" element={  <RequiresAuth> {<PlayList />  } </RequiresAuth>  } />
       <Route path="/Login" element={<Login /> } />
       <Route path="/Signup" element={<Signup /> } />
+      <Route path="*" element={<Error404 /> } />
+
 
 
 
@@ -56,11 +72,18 @@ function App() {
        </div>
       
       <Footer />
+      <ToastContainer position="top-center" autoClose={2500} hideProgressBar={false} newestOnTop={false} closeOnClick
+    rtl={false} pauseOnFocusLoss draggable pauseOnHover />      
+      
+
+   
+      
 
 
 
 
    </div>
+   
   );
 }
 

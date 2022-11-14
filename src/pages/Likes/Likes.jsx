@@ -22,6 +22,8 @@ function Likes( {_id,
   return (
     
     <div>
+      <div> Showing Results: <small>{Likes.length}</small> </div>
+
     <div className='Likes-video-div'> { Likes.map((video)=>(
       <div className='Likes-video-div2'> 
         <div>

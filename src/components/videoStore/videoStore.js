@@ -10,6 +10,7 @@ import { useLikes } from '../../context/LikesContext';
 import { useFilter } from '../../context/FilterContext';
 import { FilterByCategory } from '../../ReducerFunctions/FilterByCategory';
 import { FilterBySearch } from '../../ReducerFunctions/FilterBySearch';
+import { FilterBySortBy } from '../../ReducerFunctions/FilterBySortBy';
 
 function VideoStore() {
 
@@ -24,7 +25,8 @@ function VideoStore() {
 
   const  FilterVideosByCategory = FilterByCategory(videos,FilterState.Category)
   const FilterVideosBySearch = FilterBySearch(FilterVideosByCategory,FilterState.Search)
-  const FinalFilterVideos = FilterVideosBySearch
+  const FilterVideosBySortBy = FilterBySortBy(FilterVideosBySearch,FilterState.SortBy)
+  const FinalFilterVideos = FilterVideosBySortBy
 
 
   
@@ -52,8 +54,8 @@ function VideoStore() {
 
 
       <div className='right-side-buttons-div'>
-      <button className='header-buttons'>Latest first</button>
-      <button className='header-buttons'>Oldest first</button>
+      <button onClick={()=>FilterDispatch({type:"SORTBY",payload:"LATEST_FIRST"}) } className='header-buttons'>Latest first</button>
+      <button onClick={()=>FilterDispatch({type:"SORTBY",payload:"OLDEST_FIRST"}) } className='header-buttons'>Oldest first</button>
 
 
       </div>
