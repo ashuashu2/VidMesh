@@ -1,11 +1,11 @@
 import React, { useState,useEffect } from "react";
 import "../VideoPage/videoCard.css"
-import {AiFillLike} from 'react-icons/ai';
+import {AiFillLike ,AiFillDislike} from 'react-icons/ai';
 import { toast } from 'react-toastify';
 
 
 import { CgPlayListAdd } from 'react-icons/cg';
-import { MdWatchLater } from 'react-icons/md';
+import { MdWatchLater,MdOutlineWatchLater } from 'react-icons/md';
 import { useComments } from "../../context/commentsContext";
 import { useWatchLater } from "../../context/WatchLaterContext";
 import { useLikes } from "../../context/LikesContext";
@@ -39,6 +39,13 @@ function AddtoLikesHandler(video){
   
   }
 
+  function RemoveFromLikesHandler(video){
+   
+    LikesDispatch({type: "REMOVE_FROM_LIKES",payload: video,})    
+    toast.success(" Video Removed  From Likes !")
+  
+  }
+
   function AddtoWatchLaterHandler(video){
     if(isLoggedIn){
       WatchLaterDispatch({type: "ADD_TO_WATCHLATER",payload: video,})  
@@ -50,6 +57,13 @@ function AddtoLikesHandler(video){
     toast.error(" please login  first!")
     
     }
+    
+    }
+
+    function RemoveFromWatchLaterHandler(video){
+   
+      WatchLaterDispatch({type: "REMOVE_FROM_WATCHLATER",payload: video,})   
+       toast.success(" Video Removed  From WatchLater !")
     
     }
 
@@ -73,14 +87,21 @@ return (
       <div className="buttons-div2">
 
 
-        <h1   onClick={() =>{ AddtoLikesHandler(video) }}  className="click-button">
+        <div> {LikesState.Likes.some((p)=>p.id === video.id)?( <h1   onClick={() =>{ RemoveFromLikesHandler(video) }}  className="click-button">
+          <AiFillDislike />
+        </h1>):(<h1   onClick={() =>{ AddtoLikesHandler(video) }}  className="click-button">
           <AiFillLike />
-        </h1>
+        </h1>)} </div>
 
 
-        <h1  onClick={() =>{ AddtoWatchLaterHandler(video) }}   className="click-button">
-          <MdWatchLater />
-        </h1>
+        <div> {WatchLaterState.WatchLater.some((p)=>p.id === video.id)?( <h1   onClick={() =>{ RemoveFromWatchLaterHandler(video) }}  className="click-button">
+           <MdWatchLater />
+        </h1>):( <h1  onClick={() =>{ AddtoWatchLaterHandler(video) }}   className="click-button">
+        <MdOutlineWatchLater  />
+        </h1>)} </div>
+
+
+       
 
 
         <h1 className="click-button">
