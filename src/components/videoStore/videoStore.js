@@ -83,7 +83,7 @@ function VideoStore() {
           <div className='content3-div'>
             
             <small>{video.title} <span><GoVerified /></span></small>
-            <div  onClick={()=> LikesDispatch({type: "ADD_TO_LIKES",payload: video,})} ><small>{`${video.views}views `}    /   {video.date}</small></div>
+            <div  ><small>{`${video.views}views `}    /   {video.date}</small></div>
             </div>
             
             

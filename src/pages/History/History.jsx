@@ -3,6 +3,8 @@ import "../History/History.css"
 import { useHistory } from '../../context/HistoryContext'
 import { GoVerified } from 'react-icons/go';
 import { AiFillDelete} from 'react-icons/ai';
+import { toast } from 'react-toastify';
+
 
 
 import { Link } from 'react-router-dom';
@@ -14,6 +16,19 @@ function History() {
 
 
   const { HistoryState : { History }} = useHistory()
+
+  function RemoveFromHistoryHandler(video){
+   
+      HistoryDispatch({type: "REMOVE_FROM_HISTORY",payload: video,})
+      toast.success(" Video Removed  From History !")
+    
+    }
+
+   
+    
+    
+
+
   return (
     <div>
       <div> Showing Results: <small>{History.length}</small> </div>
@@ -28,7 +43,7 @@ function History() {
           <p className='video-description'  >{video.description}</p>
           <small>{video.title} <span><GoVerified /></span></small>
           <div ><small>{`${video.views}views `}    /   {video.date}</small></div>
-          <div onClick={()=> HistoryDispatch({type: "REMOVE_FROM_HISTORY",payload: video,})}className='delete-icon'> <AiFillDelete /> </div>
+          <div   onClick={() =>{ RemoveFromHistoryHandler(video) }} className='delete-icon'> <AiFillDelete /> </div>
 
 
 

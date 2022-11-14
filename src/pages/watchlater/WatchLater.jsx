@@ -3,6 +3,8 @@ import "../watchlater/WatchLater.css"
 import { useWatchLater } from '../../context/WatchLaterContext'
 import { GoVerified } from 'react-icons/go';
 import { AiFillDelete} from 'react-icons/ai';
+import { toast } from 'react-toastify';
+
 
 
 import { Link } from 'react-router-dom';
@@ -15,6 +17,21 @@ function WatchLater() {
 
 
   const { WatchLaterState : { WatchLater }} = useWatchLater()
+
+
+
+
+
+  function RemoveFromWatchLaterHandler(video){
+   
+    WatchLaterDispatch({type: "REMOVE_FROM_WATCHLATER",payload: video,})   
+     toast.success(" Video Removed  From WatchLater !")
+  
+  }
+
+
+
+
   return (
     <div>
       <div> Showing Results: <small>{WatchLater.length}</small> </div>
@@ -30,7 +47,7 @@ function WatchLater() {
           <p className='video-description'  >{video.description}</p>
           <small>{video.title} <span><GoVerified /></span></small>
           <div ><small>{`${video.views}views `}    /   {video.date}</small></div>
-          <div onClick={()=> WatchLaterDispatch({type: "REMOVE_FROM_WATCHLATER",payload: video,})}className='delete-icon'> <AiFillDelete /> </div>
+          <div  onClick={() =>{ RemoveFromWatchLaterHandler(video) }}    className='delete-icon'> <AiFillDelete /> </div>
 
 
 

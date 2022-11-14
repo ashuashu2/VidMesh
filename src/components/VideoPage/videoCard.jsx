@@ -9,6 +9,7 @@ import { MdWatchLater } from 'react-icons/md';
 import { useComments } from "../../context/commentsContext";
 import { useWatchLater } from "../../context/WatchLaterContext";
 import { useLikes } from "../../context/LikesContext";
+import { useAuth } from "../../context/AuthContext";
 
 
 
@@ -20,7 +21,37 @@ const {commentList,handleCommentAdd,handleCommentInput,initialComments,commentTe
 
 const { WatchLaterState , WatchLaterDispatch} = useWatchLater()
 const { LikesState , LikesDispatch} = useLikes()
+const { isLoggedIn} = useAuth()
 
+
+
+function AddtoLikesHandler(video){
+  if(isLoggedIn){
+    LikesDispatch({type: "ADD_TO_LIKES",payload: video,}); 
+      toast.success("Added To Likes!")
+  
+  }
+  else
+  {
+  toast.error(" please login  first!")
+  
+  }
+  
+  }
+
+  function AddtoWatchLaterHandler(video){
+    if(isLoggedIn){
+      WatchLaterDispatch({type: "ADD_TO_WATCHLATER",payload: video,})  
+            toast.success("Added To WatchLater!")
+    
+    }
+    else
+    {
+    toast.error(" please login  first!")
+    
+    }
+    
+    }
 
 
 
@@ -42,13 +73,12 @@ return (
       <div className="buttons-div2">
 
 
-        <h1 onClick={()=> LikesDispatch({type: "ADD_TO_LIKES",payload: video,})} className="click-button">
+        <h1   onClick={() =>{ AddtoLikesHandler(video) }}  className="click-button">
           <AiFillLike />
         </h1>
 
 
-        <h1 onClick={()=> WatchLaterDispatch({type: "ADD_TO_WATCHLATER",payload: video,})
-        } className="click-button">
+        <h1  onClick={() =>{ AddtoWatchLaterHandler(video) }}   className="click-button">
           <MdWatchLater />
         </h1>
 

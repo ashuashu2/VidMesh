@@ -5,18 +5,23 @@ import { useHistory } from '../../context/HistoryContext'
 import { GoVerified } from 'react-icons/go';
 import { AiFillDelete} from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
-function Likes( {_id,
-  views,
-  date,
-  title,
-  src,
-  description} ) {
+
+function Likes() {
   
 
   const { LikesState : { Likes }} = useLikes()
   const {LikesDispatch} = useLikes()
   const {  HistoryDispatch} = useHistory()
+
+
+  function RemoveFromLikesHandler(video){
+   
+    LikesDispatch({type: "REMOVE_FROM_LIKES",payload: video,})    
+    toast.success(" Video Removed  From Likes !")
+  
+  }
 
 
   return (
@@ -35,7 +40,7 @@ function Likes( {_id,
         <p className='video-description'  >{video.description}</p>
         <small>{video.title} <span><GoVerified /></span></small>
         <div ><small>{`${video.views}views `}    /   {video.date}</small></div>
-        <div onClick={()=> LikesDispatch({type: "REMOVE_FROM_LIKES",payload: video,})} className='delete-icon'> <AiFillDelete /> </div>
+        <div onClick={() =>{ RemoveFromLikesHandler(video) }}  className='delete-icon'> <AiFillDelete /> </div>
 
 
 
