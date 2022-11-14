@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "../Authentication/LoginSignup.css"
+// import "../Authentication/LoginSignup.css"
+// import "../Authentication/LoginSignup.css"
 
 function Signup() {
   return (
