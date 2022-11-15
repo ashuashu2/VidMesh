@@ -7,7 +7,9 @@ import { toast } from 'react-toastify';
 
 import { Link } from 'react-router-dom'
 import { useAuth } from '../../context/AuthContext';
-import "../Authentication/LoginSignup.css"
+import "../Authentication/Auth.css"
+
+
 function Login() { 
   const navigate = useNavigate();
     const location = useLocation();
