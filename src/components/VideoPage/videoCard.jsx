@@ -26,7 +26,7 @@ const { isLoggedIn} = useAuth()
 
 
 function AddtoLikesHandler(video){
-  if(isLoggedIn){
+  if(isLoggedIn.login){
     LikesDispatch({type: "ADD_TO_LIKES",payload: video,}); 
       toast.success("Added To Likes!")
   
@@ -47,7 +47,7 @@ function AddtoLikesHandler(video){
   }
 
   function AddtoWatchLaterHandler(video){
-    if(isLoggedIn){
+    if(isLoggedIn.login){
       WatchLaterDispatch({type: "ADD_TO_WATCHLATER",payload: video,})  
             toast.success("Added To WatchLater!")
     

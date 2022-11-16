@@ -47,8 +47,8 @@ return(
         </h1>
         </NavLink>
 
-        <div> {isLoggedIn ? (<button className="login-button" onClick={()=> {
-                setIsLoggedIn((isLoggedIn) => !isLoggedIn);
+        <div> {isLoggedIn.login ? (<button className="login-button" onClick={()=> {
+                setIsLoggedIn((isLoggedIn) => ({login:false}));
                 navigate("/");
                 toast.success("Logout Succesfully")}}>
 

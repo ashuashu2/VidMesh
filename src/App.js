@@ -9,19 +9,18 @@ import { WatchLater } from "./pages/watchlater/WatchLater";
 import { SideBar } from "./components/SideBar/SideBar";
 import { History } from "./pages/History/History";
 import { Likes } from "./pages/Likes/Likes";
-import { Login } from "./pages/Authentication/Login";
-import { Signup } from "./pages/Authentication/Signup";
+
 import { PlayList } from "./pages/playLists/PlayList";
 import 'react-toastify/dist/ReactToastify.css';
-
+import { Login} from "./pages/Authentication/Login"
+import {Signup } from "./pages/Authentication/Signup"
+import {RequiresAuth} from "./pages/Authentication/RequireAuth"
 
 import { Error404 } from "./pages/Error 404/ErrorRoute";
 import { ToastContainer } from "react-toastify";
-import { RequiresAuth } from "./pages/Authentication/RequireAuth";
 import { useAuth } from "./context/AuthContext";
 function App() {
-  const location = useLocation();
-  const { isLoggedIn } = useAuth()
+ 
 
 
 
@@ -61,6 +60,7 @@ function App() {
       <Route path="/Login" element={<Login /> } />
       <Route path="/Signup" element={<Signup /> } />
       <Route path="*" element={<Error404 /> } />
+
 
 
 
