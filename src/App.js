@@ -20,7 +20,8 @@ import { Error404 } from "./pages/Error 404/ErrorRoute";
 import { ToastContainer } from "react-toastify";
 import { useAuth } from "./context/AuthContext";
 function App() {
- 
+  const location = useLocation();
+  const { isLoggedIn } = useAuth()
 
 
 
