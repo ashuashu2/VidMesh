@@ -33,11 +33,11 @@ try {
 const response = await axios.post("/api/auth/signup", data)
 localStorage.setItem("token", response.data.encodedToken)
 
-  navigate("/")
+  navigate("/Login")
 
-toast.success("Signup Successfull")
+toast.success("Signup Successfull You Can Login Now")
 } catch (error) {
- toast.error("Signup Failed ")
+ toast.error("Signup Failed Please Try Again After Some Times ")
 }
 }
 
