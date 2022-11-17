@@ -20,25 +20,33 @@ function Login() {
         email: email,
         password: password,
       }
-      try {
-        const response = await axios.post("/api/auth/login", data);
-        if (response.data.encodedToken) {
-         
-          setIsLoggedIn(() => ({
-            token: response.data.encodedToken,
-            login: true,
-         
-          }));
+
+      if(email.length >= 1 && password.length >= 1 ){
+
+        try {
+          const response = await axios.post("/api/auth/login", data);
+          if (response.data.encodedToken) {
+           
+            setIsLoggedIn(() => ({
+              token: response.data.encodedToken,
+              login: true,
+           
+            }));
+            
+            toast.success("Login Successfully");
+            navigate("/");
           
-          toast.success("Login Successfully");
-          navigate(from,{replace:true});
-        
-        } else {
-          toast.error("Invalid userId  Password Please Try Again");
+          } else {
+            toast.error("Invalid userId  Password Please Try Again");
+          }
+        } catch (error) {
+          toast.error("Login Failed | Something Is Wrong Please Try Again After Some Times  ");
         }
-      } catch (error) {
-        toast.error("Login Failed | Something Is Wrong Please Try Again After Some Times  ");
+
+      }else{
+        toast.error("please fill all the Credentials ")
       }
+     
     };
 
   return (

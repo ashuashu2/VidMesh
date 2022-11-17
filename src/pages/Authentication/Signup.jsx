@@ -26,19 +26,27 @@ const signupHandler=async()=>  {
   password: password,
   firstName: firstName,
   lastName: lastName,
+
 }
-try {
+
+if( firstName.length >= 1 && lastName.length >= 1 && email.length >= 1 && password.length >= 1 ){
+  try {
+    const response = await axios.post("/api/auth/signup", data)
+    localStorage.setItem("token", response.data.encodedToken)
+    
+      navigate("/Login")
+    
+    toast.success("Signup Successfull You Can Login Now")
+    } catch (error) {
+     toast.error("Signup Failed Please Try Again After Some Times ")
+    }
+
+}else{
+  toast.error("please fill all the Credentials ")
 
 
-const response = await axios.post("/api/auth/signup", data)
-localStorage.setItem("token", response.data.encodedToken)
-
-  navigate("/Login")
-
-toast.success("Signup Successfull You Can Login Now")
-} catch (error) {
- toast.error("Signup Failed Please Try Again After Some Times ")
 }
+
 }
 
 
