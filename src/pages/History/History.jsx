@@ -31,7 +31,7 @@ function History() {
 
   return (
     <div>
-      <div> Showing Results: <small>{History.length}</small> </div>
+      <div className="showing-result-text" > Showing Results: <small>{History.length}</small> </div>
       <div className='history-video-div'> { History.map((video)=>(
         <div className='history-video-div2'> 
           <div>

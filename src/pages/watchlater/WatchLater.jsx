@@ -34,7 +34,7 @@ function WatchLater() {
 
   return (
     <div>
-      <div> Showing Results: <small>{WatchLater.length}</small> </div>
+      <div  className="showing-result-text" > Showing Results: <small>{WatchLater.length}</small> </div>
 
       <div className='WatchLater-video-div'> { WatchLater.map((video)=>(
         <div className='WatchLater-video-div2'> 

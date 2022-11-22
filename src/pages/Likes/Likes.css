@@ -1,24 +1,30 @@
 .Likes-video-div{
     margin-left: 5rem;
     margin-top: 3rem;
+  
+    display: grid;
+    grid-template-columns: auto auto;
 }
 .Likes-video-div2{
-    display: flex;
+    /* display: flex; */
     border: 2px solid white;
     position: relative;
 
-    height: 40vh;
-    margin: 2rem;
+    height: 65vh;
+ 
+    margin: 1.5rem;
+    /* padding: 1.1rem; */
 
 
 }
 .Likes-video-image{
-    height: 40vh;
+    height: 50vh;
+    width: 70%;
     margin-left: 0.5rem;
 }
 .Likes-video-content{
-    margin-top: 5rem;
-    margin-left: 2rem;
+    /* margin-top: 5rem; */
+    /* margin-left: 2rem; */
 }
 .delete-icon{
     font-size: 2rem;
@@ -26,4 +32,7 @@
     bottom: 5px;
     right: 15px;
     
+}
+.showing-result-text{
+    font-size: 1.5rem;
 }

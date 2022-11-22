@@ -145,7 +145,7 @@ return (
           ))}
         </ul>
         <ul>
-          <li className="initial-comments">{initialComments.map((initialComments)=>(
+          <li  className="initial-comments">{initialComments.map((initialComments)=>(
             <div className="comment-list comments-middle-div">
               <img className="random-images" src="https://source.unsplash.com/user/c_v_r/50x50"></img>
               <div></div>

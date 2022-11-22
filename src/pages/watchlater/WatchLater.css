@@ -1,6 +1,7 @@
 .WatchLater-video-div{
     margin-left: 5rem;
     margin-top: 3rem;
+
 }
 .WatchLater-video-div2{
     display: flex;
@@ -26,4 +27,7 @@
     bottom: 5px;
     right: 15px;
     
+}
+.showing-result-text{
+    font-size: 1.5rem;
 }

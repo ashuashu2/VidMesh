@@ -11,9 +11,7 @@ const CommentProvider=({children})=>{
 const initialComments = [
 "Very well-researched and fine-made video this is.",
 "I truly love your channel. Keep doing the best work. ",
-"Following your channel from the last two years, interesting content!",
 "Love this video, I think I’ve watched it four times. ",
-"Whoever is reading this, never give up. God is with you. "
 ]
 
 

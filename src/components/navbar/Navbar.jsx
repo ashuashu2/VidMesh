@@ -32,13 +32,13 @@ return(
 
     <div className="search-div">
         <div>
-            <input placeholder="Search your Videos" onChange={(event)=>
+            <input placeholder=" 🔍       Search your Videos" onChange={(event)=>
             FilterDispatch({type:"SEARCH",payload:event.target.value}) } className="nav-search" type="text" />
         </div>
     </div>
     <div className="left-side-div">
 
-        <h1 className="left-side-icon">
+        <h1 className="left-side-icon bell-icon">
             <IoIosNotificationsOutline />
         </h1>
         <NavLink to="./Login" state={{from:location}} className="navbar-links-button">

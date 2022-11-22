@@ -27,7 +27,7 @@ function Likes() {
   return (
     
     <div>
-      <div> Showing Results: <small>{Likes.length}</small> </div>
+      <div className="showing-result-text" > Showing Results: <small>{Likes.length}</small> </div>
 
     <div className='Likes-video-div'> { Likes.map((video)=>(
       <div className='Likes-video-div2'> 
