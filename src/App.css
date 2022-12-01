@@ -25,7 +25,9 @@ button{
 }
 .routes-div{
   width: 92%;
+
 }
+  /* }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -68,4 +70,19 @@ button{
   color: #d9d9d9;
   font-size: 1.2rem;
   margin: 1rem;
+} */
+
+@media screen and (max-width: 800px) { 
+  
+.sideBar-home-div{
+display: none;
+
+
+}
+.routes-div{
+  width: 100%;
+}
+
+
+
 }
