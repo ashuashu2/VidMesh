@@ -19,26 +19,21 @@ import {RequiresAuth} from "./pages/Authentication/RequireAuth"
 import { Error404 } from "./pages/Error 404/ErrorRoute";
 import { ToastContainer } from "react-toastify";
 import { useAuth } from "./context/AuthContext";
+import { BsWindow } from "react-icons/bs";
+import { useState } from "react";
+import { useEffect } from "react";
 function App() {
-  const location = useLocation();
-  const { isLoggedIn } = useAuth()
-
-
-
-
-
-
-  
-
-
-
+ 
 
 
 
   return (
     <div className="App">
+
+      <div className="navbar"> <Navbar /> </div>
+
+
       
-      <Navbar className="navbar"/>
 
 
       <div className="main-container">

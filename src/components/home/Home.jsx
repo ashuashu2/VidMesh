@@ -18,11 +18,11 @@ return(
 
         <div className="home-right-div">
             <div className="home-right-div2">
-                <h1> <span className="welcome-text">W</span>elcome <span className="welcome-text">T</span>o <span
+                <h1 className="welcome-text-containter"> <span className="welcome-text text1">W</span>elcome <span className="welcome-text">T</span>o <span
                         className="welcome-text">V</span>id<span className="welcome-text">M</span>esh <span
                         className="welcome-text">V</span>ideo</h1>
-                <h3>Click Here To Explore </h3>
-                <h3>All Collection Of Videos</h3>
+                <h3 className="click-here-text" >Click Here To Explore </h3>
+                <h3 className="all-collection-text">All Collection Of Videos</h3>
                 <Link to="/VideoListing"><button className="home-button">Explore Collection</button> </Link>
             </div>
 

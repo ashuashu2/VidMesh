@@ -3,6 +3,8 @@ import navlogo from "../../images/navlogo.jpg"
 
 import { BsSearch } from "react-icons/bs";
 import { IoIosNotificationsOutline } from "react-icons/io"
+import { GiHamburgerMenu } from 'react-icons/gi';
+
 import { CgProfile } from "react-icons/cg"
 import { Link,NavLink, useLocation, useNavigate} from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
@@ -13,6 +15,7 @@ import { useAuth } from "../../context/AuthContext";
 
 
 function Navbar(){
+   
 
 
 const { isLoggedIn, setIsLoggedIn } = useAuth();
@@ -42,12 +45,12 @@ return(
             <IoIosNotificationsOutline />
         </h1>
         <NavLink to="./Login" state={{from:location}} className="navbar-links-button">
-        <h1 className="left-side-icon">
+        <h1 className="left-side-icon profile-icon">
             <CgProfile />
         </h1>
         </NavLink>
 
-        <div> {isLoggedIn.login ? (<button className="login-button" onClick={()=> {
+        <div className="login-button-div2" > {isLoggedIn.login ? (<button className="login-button" onClick={()=> {
                 setIsLoggedIn((isLoggedIn) => ({login:false}));
                 navigate("/");
                 toast.success("Logout Succesfully")}}>
@@ -56,6 +59,13 @@ return(
             </button>):( <NavLink style={{color:"black"}} to="./Login" state={{from:location}}>  <button className="login-button" >
                 Login
             </button> </NavLink>) } </div>
+            <div className="hamburger">
+            <h1 >
+            <GiHamburgerMenu />
+        </h1>
+
+            </div>
+            
 
 
 
@@ -65,4 +75,4 @@ return(
 
 )
 }
-export {Navbar}
+export { Navbar }

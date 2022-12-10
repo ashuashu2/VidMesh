@@ -66,3 +66,101 @@ margin-left: 5rem;
 font-size: 1.2rem;
 /* color: red; */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 750px) { 
+
+
+
+
+
+
+
+
+    .header-button-div{
+        display: unset;
+        margin-top: 3rem;
+        margin:4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    
+    }
+    .right-side-buttons-div{
+        margin-left: auto;
+    
+    }
+    .header-buttons{
+        margin: 1rem;
+        padding: 0.6rem;
+        background-color: black;
+        color: white;
+        border-color: red;
+        border-radius: 3rem;
+        border-top-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+        margin: 4px;
+        
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    .videos-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        max-width: 100%;
+        margin: 3rem;
+        margin-top: 0rem;
+    }
+    
+    .content-div{
+        margin-left: 2rem;
+        transition: 3s ease-in-out;
+        cursor: pointer;
+    
+    }
+    .content-div:hover{
+     
+        cursor: pointer;
+    
+    }
+    .thumbnail-pic{
+        height: 260px;
+        width: 330px;
+        transition: .3s ease-in-out;
+    
+    }
+    .video-description{
+        margin-top: -2rem;
+    }
+    .content2-div{
+    display: flex;
+    /* height: 90px; */
+    flex-direction: column;
+    justify-content: space-between;
+    
+    }
+    .showing-result-para{
+    margin-left: 5rem;
+    font-size: 1.2rem;
+    /* color: red; */
+    }
+
+
+}
