@@ -3,6 +3,7 @@
     display: flex;
 
 
+
     height: 17vh;
     box-shadow: 0px 0.2px 0px 0px;
  
@@ -51,18 +52,24 @@
     margin-top: 2rem;
     
     height: 3.4vh;
-    width: 27rem;
+    width: 60%;
 
 }
 
 .search-div{
-margin-left: 15%;
+    width: 100%;
+
+margin-left: auto;
+
 }
 .left-side-div{
     display: flex;
     margin: 2rem;
+    margin-right: 0rem;
     margin-left: auto;
+
     margin-top: -0.2rem;
+
     
 }
 .left-side-icon{
@@ -110,7 +117,7 @@ cursor: pointer;
 /* *********************   Responsive        ********************* */
 
 
-@media screen and (max-width: 700px) { 
+@media screen and (max-width: 800px) { 
     
 .main-navbar-div{
     width: 100%;

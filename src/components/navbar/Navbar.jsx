@@ -34,10 +34,10 @@ return(
     </Link>
 
     <div className="search-div">
-        <div>
+        
             <input placeholder=" 🔍       Search your Videos" onChange={(event)=>
             FilterDispatch({type:"SEARCH",payload:event.target.value}) } className="nav-search" type="text" />
-        </div>
+        
     </div>
     <div className="left-side-div">
 
