@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+
+  /* overflow-x: hidden; */
+  
+
  
 }
 body{
@@ -35,12 +39,16 @@ display: none;
 @media screen and (max-width: 800px) { 
   
 .sideBar-home-div{
-display: none;
+  /* display: none; */
+  width: 0%;
+  
 
 
 }
+
 .routes-div{
   width: 100%;
+  z-index: 1;
 }
 
 

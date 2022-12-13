@@ -79,10 +79,10 @@ return (
 <div className="single-product-main-div">
   <div className="single-product-div">
     <div className="video-div"><embed className="video-src" src={video.src} type="" /></div>
-    <h2>{video.description} </h2>
+    <h2 className="video-des">{video.description} </h2>
     <div className=" date-button-container">
       <div>
-        <h3>{video.views} views / {video.date}</h3>
+        <h3 className="video-date-and-views">{video.views} views / {video.date}</h3>
       </div>
       <div className="buttons-div2">
 

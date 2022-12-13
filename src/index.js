@@ -11,6 +11,7 @@ import { HistoryProvider } from "./context/HistoryContext";
 import { LikesProvider } from "./context/LikesContext";
 import { FilterProvider } from "./context/FilterContext";
 import { AuthProvider } from "./context/AuthContext";
+import { HamburgerProvider } from "./context/HamburgerContext";
 
 
 
@@ -19,6 +20,7 @@ makeServer();
 
 ReactDOM.render(
   <React.StrictMode>
+    <HamburgerProvider>
     <AuthProvider>
     <FilterProvider>
     <LikesProvider>
@@ -36,6 +38,7 @@ ReactDOM.render(
     </LikesProvider>
     </FilterProvider>
     </AuthProvider>
+    </HamburgerProvider>
   
   </React.StrictMode>,
   document.getElementById("root")

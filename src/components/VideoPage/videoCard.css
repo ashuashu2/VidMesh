@@ -108,12 +108,57 @@ margin: 1.1rem;
    .comments-middle-div{
     margin-left: -5rem;
    }
-   /* .input-div{
-    display: block;
-    text-align: left;
-    margin-bottom: 1rem;
+   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @media screen and (max-width: 800px) { 
+    
+
+    .video-src{
+        height: 100vw;
+          width: 115%;
+          margin: 0rem;
+          margin-left: -1rem;
+          margin-top: -2.5rem;
+      
+      }
+      .video-des{
+        font-size: 1em;
+        margin-top: -0.3rem;
+      }
+      .date-button-container{
+        display: unset;
+    }
+
+   .video-date-and-views{
+    font-size: 1em;
+    margin-top: -0.6rem;
+    
    }
-   .comments-h1{
-    text-align: left;
-   } */
+
+
+
+
+
+
+}

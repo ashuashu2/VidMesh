@@ -5,6 +5,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
 
+
 }
 .right-side-buttons-div{
     margin-left: auto;
@@ -110,6 +111,9 @@ justify-content: space-between;
         "leftdiv"
         "rightdiv" 
          "showingdiv";
+         margin-right: 5rem;
+       
+        
 
        
     

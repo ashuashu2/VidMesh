@@ -205,7 +205,8 @@ display: none;
     display: flex;
      margin-top: -1rem;
     margin-left: auto;
-    /* margin-left: 4rem; */
+
+    margin-right: 2rem;
     
 }
 .left-side-icon{
@@ -237,7 +238,19 @@ cursor: pointer;
     display: unset;
     font-size: 1.1rem;
     margin-top: -0.4rem;
+    z-index: 999;
+    cursor: pointer;
+    transition: all 3s ;
+   
 }
+.cross-icon{
+    color: black;
+    font-size: 1.5em;
+    margin-top: 2rem;
+}
+
+
+
 
 
     

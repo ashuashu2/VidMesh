@@ -7,17 +7,22 @@ import { CgPlayListAdd } from 'react-icons/cg';
 import { RiChatHistoryFill} from 'react-icons/ri';
 import { MdWatchLater } from 'react-icons/md';
 import { Link } from "react-router-dom";
-
-
+import { useHamburger } from "../../context/HamburgerContext";
 
 
 
 function SideBar() {
+  const {isMobile } = useHamburger()
+ 
+
+
+
 
 return (
-<div className="side-icon-div">
+<div className=  {isMobile ?  "side-icon-div" : "side-iconss"} >
+  
   <Link className="side-bar-links" to="/">
-  <div>
+  <div className="side-bar-icons-div">
     <h3 className="side-icon">
       <AiFillHome />
     </h3>
@@ -32,7 +37,7 @@ return (
 
   <Link className="side-bar-links" to="/VideoListing">
 
-  <div>
+  <div className="side-bar-icons-div">
     <h3 className="side-icon">
       <MdExplore />
     </h3>
@@ -46,7 +51,7 @@ return (
 
 
   <Link className="side-bar-links" to="/WatchLater">
-  <div>
+  <div className="side-bar-icons-div">
     <h3 className="side-icon">
       <MdWatchLater />
     </h3>
@@ -57,7 +62,7 @@ return (
 
 
   <Link className="side-bar-links" to="/PlayList">
-  <div>
+  <div className="side-bar-icons-div">
     <h3 className="side-icon">
       <CgPlayListAdd />
     </h3>
@@ -67,7 +72,7 @@ return (
   </Link>
 
   <Link className="side-bar-links" to="/Likes">
-  <div>
+  <div className="side-bar-icons-div">
     <h3 className="side-icon">
       <AiFillLike />
     </h3>
@@ -81,7 +86,7 @@ return (
 
 
 <Link className="side-bar-links" to="/History">
-   <div>
+   <div className="side-bar-icons-div">
     <h3 className="side-icon">
       <RiChatHistoryFill />
     </h3>

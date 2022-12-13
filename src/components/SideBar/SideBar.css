@@ -1,30 +1,109 @@
-.side-icon-div{
+.side-icon-div {
     text-align: center;
     margin-left: 1rem;
 
     margin: 2rem;
     box-shadow: 0.2px 0px 0px 0px;
 
-    
+
+
+
+
     padding-right: 8rem;
 
 }
 
-.side-icon{
+.side-icon {
     font-size: 2rem;
     margin-bottom: -2.2rem;
     margin-left: 0.5rem;
 
 }
-.side-icon-text{
+
+.side-icon-text {
     font-size: 1rem;
     font-weight: bolder;
 
 }
-.side-bar-links{
+
+.side-bar-links {
     color: white;
     text-decoration: none;
 }
-.side-icon-text2{
+
+.side-icon-text2 {
     font-size: 0.9rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+
+    .side-icon-div {
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+        background-color: rgb(247, 244, 244);
+        margin-left: 0rem;
+
+        margin: 0rem;
+        box-shadow: 0.2px 0px 0px 0px;
+        margin-top: -3.6rem;
+        position: fixed;
+        top: 61px;
+        padding-right: 0rem;
+        text-align: left;
+        display: unset;
+        transition: all 0.5s ;
+
+
+
+
+
+    }
+
+    .side-iconss{
+        display: none;
+        transition: 0.5s;
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+        background-color: rgb(247, 244, 244);
+        margin-left: 0rem;
+
+        margin: 0rem;
+        box-shadow: 0.2px 0px 0px 0px;
+        margin-top: -3.6rem;
+        position: fixed;
+        top: 152px;
+        padding-right: 0rem;
+        text-align: left;
+       
+        transition: all 0.5s ;
+
+    }
+
+    .side-bar-icons-div {
+        width: 50%;
+        margin-left: 2rem;
+
+    }
+
+    .side-bar-links {
+        color: black;
+        text-decoration: none;
+        background-color: rgb(230, 36, 36);
+        width: 50%;
+
+
+
+
+    }
+
+
+
 }

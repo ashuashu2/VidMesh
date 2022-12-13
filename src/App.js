@@ -1,6 +1,6 @@
 import "./App.css";
 import { Home } from "./components/home/Home";
-import { Navbar } from "./components/navbar/Navbar"
+import { Navbar, useHamburgerHandler } from "./components/navbar/Navbar"
 import {Route, Routes, useLocation} from "react-router-dom"
 import { VideoListing } from "./components/videosListing/VideoListing";
 import { VideoDetail } from "./components/VideoPage/videoPage";
@@ -18,29 +18,27 @@ import {RequiresAuth} from "./pages/Authentication/RequireAuth"
 
 import { Error404 } from "./pages/Error 404/ErrorRoute";
 import { ToastContainer } from "react-toastify";
-import { useAuth } from "./context/AuthContext";
-import { BsWindow } from "react-icons/bs";
-import { useState } from "react";
 import { useEffect } from "react";
+import { useState } from "react";
+import { useHamburger } from "./context/HamburgerContext";
+
+
 function App() {
- 
+  const { isMobile}  = useHamburger()
+  console.log(isMobile)
+
 
 
 
   return (
     <div className="App">
 
-      <div className="navbar"> <Navbar /> </div>
-
-
-      
-
-
+      <div  className="navbar"> <Navbar /> </div>
       <div className="main-container">
-      <div className="sideBar-home-div">
+      <div className="sideBar-home-div" >
 
        
-            <SideBar />
+            <SideBar  />
        
     </div>
 
