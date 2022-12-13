@@ -33,3 +33,49 @@
 .showing-result-text{
     font-size: 1.5rem;
 }
+
+
+
+@media screen and (max-width: 800px) {
+
+
+
+    .history-video-div{
+        margin-left: 0rem;
+        margin-top: 1rem;
+    
+    }
+    .history-video-div2{
+        display: grid;
+        border: 2px solid white;
+        position: relative;
+       
+        height: 60vh;
+    
+        margin: 1rem;
+    
+    
+    }
+    .history-video-image{
+        height: 32vh;
+        width: 90%;
+        margin-left: 0rem;
+    }
+    .history-video-content{
+        margin-top: 1rem;
+        margin-left: 0rem;
+    }
+    .delete-icon{
+        font-size: 2rem;
+        position: absolute;
+        bottom: 5px;
+        right: 15px;
+        cursor: pointer;
+        
+    }
+    .showing-result-text{
+        font-size: 1em;
+    }
+    
+
+}

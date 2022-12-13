@@ -22,10 +22,7 @@
     width: 70%;
     margin-left: 0.5rem;
 }
-.Likes-video-content{
-    /* margin-top: 5rem; */
-    /* margin-left: 2rem; */
-}
+
 .delete-icon{
     font-size: 2rem;
     position: absolute;
@@ -35,4 +32,48 @@
 }
 .showing-result-text{
     font-size: 1.5rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+
+
+    .Likes-video-div{
+        margin-left: 0rem;
+        margin-top: 0.5rem;
+      
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .Likes-video-div2{
+     
+        border: 2px solid white;
+        position: relative;
+    
+        height: 65vh;
+     
+        margin: 1.5rem;
+       
+    
+    
+    }
+    .Likes-video-image{
+        height: 40vh;
+        width: 80%;
+        margin-left: 0rem;
+    }
+    
+   
+    
+
+
+
+
+
+
 }
