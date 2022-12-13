@@ -1,4 +1,4 @@
-.side-icon-div {
+.side-iconss {
     text-align: center;
     margin-left: 1rem;
 
@@ -12,6 +12,8 @@
     padding-right: 8rem;
 
 }
+
+
 
 .side-icon {
     font-size: 2rem;
@@ -79,7 +81,7 @@
         box-shadow: 0.2px 0px 0px 0px;
         margin-top: -3.6rem;
         position: fixed;
-        top: 152px;
+        top: 61px;
         padding-right: 0rem;
         text-align: left;
        
