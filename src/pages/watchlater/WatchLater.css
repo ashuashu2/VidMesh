@@ -9,12 +9,13 @@
     position: relative;
 
     height: 40vh;
+   
     margin: 2rem;
 
 
 }
 .WatchLater-video-image{
-    height: 40vh;
+    height: 100%;
     margin-left: 0.5rem;
 }
 .WatchLater-video-content{
@@ -30,4 +31,58 @@
 }
 .showing-result-text{
     font-size: 1.5rem;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .WatchLater-video-div{
+    margin-left: 0rem;
+    margin-top: 0rem;
+    margin: 1rem;
+
+}
+.WatchLater-video-div2{
+    display: grid;
+    border: 2px solid white;
+    position: relative;
+
+    height: 50vh;
+   
+    margin: 0rem;
+    margin-bottom: 2rem;
+
+
+}
+.WatchLater-video-image{
+    height: 30vh;
+    margin-left: 0rem;
+    margin: 0rem;
+}
+.WatchLater-video-content{
+    margin-top: 0rem;
+    margin-left: 0rem;
+}
+.delete2-icon{
+    font-size: 1em;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    
+}
+.showing-result-text{
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
 }
