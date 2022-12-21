@@ -1,0 +1,145 @@
+/* *****************     playlist-card.jsx       ****************************** */
+
+
+
+
+.playlist-main-div {
+    display: grid;
+    grid-template-columns:auto auto auto ;
+    color: white;
+    inset: 0;
+    margin: 4%;
+    cursor: pointer;
+  }
+
+  .playlist-card {
+    width: 100%;
+    gap: 20px;
+  }
+  
+  .playlistcard-typo {
+    width: 70%;
+    text-align: left;
+    object-fit: contain;
+    margin-left: 15%;
+    overflow: hidden;
+  }
+  
+  .playlistcard-img {
+    object-fit: contain;
+    width: 70%;
+  }
+  
+  .playlistcard-skin {
+    width: 100%;
+  }
+  
+  #delete-icon {
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    margin-left: -1rem;
+    color: white;
+  }
+
+
+/* *****************     playlist.jsx       ****************************** */
+
+
+  .empty-playlist-img{
+    width: 90%;
+    background-color: black;
+}
+
+
+
+/* *****************     playlist-page.jsx       ****************************** */
+
+.playlist-page-container{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    color: white;
+    inset: 0;
+   
+    cursor: pointer;
+
+
+}
+.playlist-page-div{
+    width: 100%;
+    gap: 20px;
+
+}
+
+
+.playlist-page-pic{
+    object-fit: contain;
+    width: 70%;
+    height: 50vh;
+
+}
+.playlist-page-title{
+    width: 70%;
+    text-align: left;
+    object-fit: contain;
+    margin-left: 15%;
+    overflow: hidden;
+
+}
+.playlist-page-description{
+    width: 70%;
+    text-align: left;
+    object-fit: contain;
+    margin-left: 15%;
+    overflow: hidden;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (max-width: 800px) {
+    .playlist-main-div {
+      display: grid;
+      grid-template-columns: 1fr;
+      color: white;
+      max-width: 90%;
+      inset: 0;
+      margin: 4%;
+    }
+  
+    .playlist-main-div{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .empty-playlist-img{
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-left: 5%;
+        width: 100%;
+    }
+
+    .playlist-page-container{
+        display: grid;
+        grid-template-columns:auto ;
+      
+        cursor: pointer;
+    
+    
+    }
+  
+
+  }
+  

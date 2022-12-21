@@ -10,7 +10,7 @@ import { SideBar } from "./components/SideBar/SideBar";
 import { History } from "./pages/History/History";
 import { Likes } from "./pages/Likes/Likes";
 
-import { PlayList } from "./pages/playLists/PlayList";
+import { Playlist}  from "./pages/playLists/PlayList";
 import 'react-toastify/dist/ReactToastify.css';
 import { Login} from "./pages/Authentication/Login"
 import {Signup } from "./pages/Authentication/Signup"
@@ -18,19 +18,16 @@ import {RequiresAuth} from "./pages/Authentication/RequireAuth"
 
 import { Error404 } from "./pages/Error 404/ErrorRoute";
 import { ToastContainer } from "react-toastify";
-import { useEffect } from "react";
-import { useState } from "react";
-import { useHamburger } from "./context/HamburgerContext";
+
+import { Modal } from "./pages/playLists/Modal/Modal";
+import { useAuth } from "./context/AuthContext";
+import { usePlaylist } from "./context/PlayListContext";
+import PlaylistPage from "./pages/playLists/playlistPage";
 
 
 function App() {
-  const { isMobile}  = useHamburger()
-  console.log(isMobile)
 
-
-
-
-  return (
+ return (
     <div className="App">
 
       <div  className="navbar"> <Navbar /> </div>
@@ -51,10 +48,15 @@ function App() {
       <Route path="/WatchLater" element={ <RequiresAuth> {<WatchLater /> } </RequiresAuth>  } />
       <Route path="/History" element={ <RequiresAuth> {<History />  } </RequiresAuth>   } />
       <Route path="/Likes" element={<RequiresAuth> {<Likes />  } </RequiresAuth>  } />
-      <Route path="/PlayList" element={  <RequiresAuth> {<PlayList />  } </RequiresAuth>  } />
+      <Route path="/Playlist" element={  <RequiresAuth> {<Playlist />  } </RequiresAuth>  } />
       <Route path="/Login" element={<Login /> } />
       <Route path="/Signup" element={<Signup /> } />
       <Route path="*" element={<Error404 /> } />
+      <Route path="modal" element={<Modal />} />
+      <Route path="/playlist/:playlistId" element={<PlaylistPage />} />
+
+   
+
 
 
 

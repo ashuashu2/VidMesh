@@ -8,16 +8,21 @@
 
 
 
+
 .login-main-div{
-    text-align: center;
-     margin: auto;
+    
+     background-image: url("../../images/background.jpg") ;
+     background-size: 700px;
+     margin-left: 5rem;
+     width: 100%;
+   
  }
  
  .login-page-form-div{
  
      border-radius: 2rem;
-     background-color: #f5eee4;;
-     flex-wrap: wrap;
+     background-color: rgba(83, 54, 54, 0.123);
+    
      height: 65vh;
      width: 30%;
      color: black;
@@ -30,46 +35,50 @@
  }
  .login-heading{
  
-     font-size: x-large;
-     color: red;
+     font-size: 2.5rem;
+     font-style: italic;
+     font-family: 'Courier New', Courier, monospace;
+     color: white;
      margin-bottom: 2rem;
      padding-top: 1.5rem;
  }
  .username-label{
  
-     margin-right: auto;
- margin-left: 25%;
- margin-top: 1rem;
- color: red;
- font-weight: 600;
+    font-size: 1rem;
+    margin-right: auto;
+    margin-left: 15%;
+    margin-top: 0.7rem;
+    color: red;
+    font-weight: 600;
  
  }
  
  .email-input{
  height: 3.3vh;
- width: 50%;
+ width: 70%;
  text-align: center;
  
  
  
  }
  .password-label{
+    font-size: 1rem;
  margin-right: auto;
- margin-left: 25%;
+ margin-left: 15%;
  margin-top: 0.7rem;
  color: red;
  font-weight: 600;
  }
  .password-input{
  height: 3.3vh;
- width: 50%;
+ width: 70%;
  text-align: center;
  
  
  
  }
  .login2-button{
-     width: 52%;
+     width: 72%;
  margin: 1rem;
  height: 4vh;
  color: red;
@@ -82,7 +91,7 @@
  
  }
  .login-as-guest-button{
-     width: 52%;
+     width: 72%;
  margin: 0.2rem;
  height: 4vh;
  color: red;
@@ -108,12 +117,39 @@
  }
  .not-a-member-signup{
  
-     color: black;
+     color:white;
      text-decoration: none;
      font-size: 1rem;
  
  }
+
+
+@media screen and (max-width: 800px) { 
+    .login-main-div{
+    
+        background-image: url("../../images/background.jpg") ;
+        background-size: cover;
+        margin-left: 5rem;
+        width: 100%;
+      
+    }
+
+
+    .login-page-form-div{
  
+     
+        height: 50vh;
+        width: 70%;
+        color: black;
+        margin: unset;
+    
+    
+        
+    
+    }
+}
+
+
  
  
  
@@ -136,20 +172,23 @@
  
  
  .signup-main-div{
-    text-align: center;
-     margin: auto;
+  
+    background-image: url("../../images/background.jpg") ;
+    background-size: 700px;
+    margin-left: 5rem;
+    width: 100%;
  }
  
  .signup-page-form-div{
  
-     border-radius: 2rem;
-     background-color: #f5eee4;;
-     flex-wrap: wrap;
-     height: 70vh;
-     width: 40%;
-     color: black;
-     margin: auto;
-     text-align: center;
+    border-radius: 2rem;
+    background-color: rgba(83, 54, 54, 0.123);
+   
+    height: 65vh;
+    width: 40%;
+    color: black;
+    margin: auto;
+    text-align: center;
  
  
      
@@ -158,22 +197,18 @@
  
  .signup-heading{
  
-     font-size: x-large;
-     color: red;
+    
+     font-size: 2.5rem;
+     font-style: italic;
+     font-family: 'Courier New', Courier, monospace;
+     color: white;
      margin-bottom: 2rem;
      padding-top: 1.5rem;
  
  }
  
  
- 
- .signup-lastname-label{
- 
- margin-top: 1rem;
- color: red;
- font-weight: 600;
- 
- }
+
  
  
  .signup-email-input{
@@ -185,6 +220,7 @@
  
  }
  .signup-password-label{
+    font-size: 1rem;
  margin-right: auto;
  margin-left: 11%;
  margin-top: 0.7rem;
@@ -192,20 +228,25 @@
  font-weight: 600;
  }
  .signup-firstname-label{
+    font-size: 1rem;
+
   
  margin-top: 0.7rem;
  color: red;
  font-weight: 600;
- margin-right: 5.8rem;
+ margin-right: 4rem;
  
  }
  
  
  .signup-lastname-label{
+    font-size: 1rem;
+
      margin-top: 0.7rem;
+
  color: red;
  font-weight: 600;
- margin-right: 5.8rem;
+ margin-right: 4rem;
  
  
  
@@ -258,6 +299,8 @@
      align-items: center;
  }
  .signup-username-label{
+    font-size: 1rem;
+
      margin-right: auto;
  margin-left: 11%;
  margin-top: 0.7rem;
@@ -269,7 +312,7 @@
  }
  .already-a-member-signup{
  
-     color: black;
+     color: white;
      text-decoration: none;
      font-size: 1rem;
  
@@ -278,3 +321,36 @@
  .signup-name-div{
      display: flex;
  }
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 800px) { 
+    .signup-main-div{
+    
+        background-image: url("../../images/background.jpg") ;
+        background-size: cover;
+        margin-left: 0rem;
+        width: 100%;
+      
+    }
+
+
+    .signup-page-form-div{
+ 
+     
+        height: 50vh;
+        width: 100%;
+        color: black;
+        margin: unset;
+        text-align:unset;
+    
+    
+        
+    
+    }
+}

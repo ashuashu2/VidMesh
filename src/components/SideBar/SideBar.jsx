@@ -61,7 +61,7 @@ return (
 
 
 
-  <Link className="side-bar-links" to="/PlayList">
+  <Link className="side-bar-links" to="/Playlist">
   <div className="side-bar-icons-div">
     <h3 className="side-icon">
       <CgPlayListAdd />

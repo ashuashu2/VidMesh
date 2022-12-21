@@ -1,0 +1,221 @@
+.modal-page-div{
+    padding: 4rem;
+    width: 60%;
+    height: 50%;
+    margin: auto;
+    border-radius: 4px;
+    background-color: black;
+   
+    border: 2px solid turquoise;
+    position: relative;
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    display: flex;
+    transition: all 2s;
+    
+}
+
+.modalPage-image{
+    height: 100%;
+    width: 100%;
+    margin-right: 0rem;
+   
+}
+.modal-input{
+    width: 80%;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    border-bottom: 1px solid turquoise;
+}
+.modal-input::placeholder{
+    color: white;
+
+}
+.modalPage-image-div{
+    width: 40%;
+
+}
+.modalPage-left-div{
+    margin: auto;
+    width: 60%;
+    margin-bottom: 18%;
+    
+
+}
+.create-playlist-button-div{
+    position: relative;
+}
+.create-playlist-button{
+    font-size: 1rem;
+    position: absolute;
+    right:  2rem;
+    margin-top: 1rem;
+    background-color: turquoise;
+    border: 1px solid turquoise;
+    color: black;
+    padding: 0.6rem 1rem;
+    font-weight:bold;
+    
+   
+ 
+    
+
+}
+.create-playlist-button:hover{
+    background-color: black;
+    color: whitesmoke;
+    border: 2px solid turquoise;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+.modalPage-close-button-div{
+    position: absolute;
+    bottom: 5%;
+    right:  5%;
+    
+
+
+}
+.modalPage-close-button{
+    font-size: 1rem;
+    background-color: turquoise;
+    border: 1px solid turquoise;
+    color: black;
+    padding: 0.6rem 1rem;
+    font-weight:bold;
+    border-radius: 2rem;
+}
+.modalPage-close-button:hover{
+    background-color: black;
+    color: whitesmoke;
+    border: 2px solid turquoise;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+
+.playlist__name__outer {
+    overflow-y: scroll;
+    height: 7.5vw;
+    width: 50%;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    color: white;
+    background-color: black;
+    
+  }
+  
+  .playlist__name__outer::-webkit-scrollbar {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    width: 8px;
+  }
+  .playlist__name__outer::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background-color: turquoise;
+  }
+  .playlist__name__outer::-webkit-scrollbar-track {
+    
+    border-radius: 1rem;
+    
+  }
+  .align__horizontal {
+    display: flex;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) { 
+
+    .modal-page-div{
+        padding: 1rem;
+        width: 80%;
+        height: 85%;
+        
+        margin: auto;
+        border-radius: 4px;
+        background-color: black;
+       
+        border: 2px solid turquoise;
+        position: relative;
+        position: fixed;
+        inset: 0;
+        z-index: 10;
+        display: grid;
+    }
+    .modalPage-image-div{
+        width: 100%;
+        height: 100%;
+        /* margin-left: 1rem; */
+    }
+
+
+    .modalPage-image{
+        height: 100%;
+        width: 100%;
+        
+      
+    }
+    .modal-input{
+        width: 80%;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: transparent;
+        border-bottom: 1px solid turquoise;
+    }
+    .modal-input::placeholder{
+        color: white;
+    
+    }
+
+    .create-playlist-button{
+        position: absolute;
+        right:  24%;
+        margin-top: 0.6rem;
+
+        
+       
+     
+        
+    
+    }
+  
+    .modalPage-left-div{
+        margin: unset;
+        width: 100%;
+        margin-bottom: 0%;
+        margin-top: 1.5rem;
+        
+    
+    }
+    .modalPage-close-button-div{
+        position: absolute;
+        bottom: 2%;
+        right:  2%;
+        
+    
+    
+    }
+
+
+
+    
+}

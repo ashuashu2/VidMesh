@@ -20,6 +20,7 @@ function Login() {
         email: email,
         password: password,
       }
+      
 
       if(email.length >= 1 && password.length >= 1 ){
 
@@ -32,6 +33,7 @@ function Login() {
               login: true,
            
             }));
+            
             
             toast.success("Login Successfully");
             navigate("/");
@@ -76,7 +78,11 @@ function Login() {
        
          
           <button className='login2-button'   onClick={ ()=>loginHandler()}>Login</button>
-          <button className="login-as-guest-button" onClick={() => {setIsLoggedIn((isLoggedIn) =>  ({login:true}));
+          <button className="login-as-guest-button" onClick={() => {setIsLoggedIn(() => ({
+              token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWUwNjE3Yy0yNWU0LTRkZjQtYTI0YS0yYTRhNWRjOTI2NTMiLCJlbWFpbCI6IngifQ.yuWRx4X_-4yDeZPU3Zxtmam7CXFNTl3SYURasC1JMBw",
+              login: true,
+           
+            }));
                   toast.success("Login Succesfully");
                   navigate(from,{replace:true});}}>Login As Guest</button>
           <h5 className='not-a-member'>Not a member ? <Link to="/Signup"  className='not-a-member-signup'>Signup</Link> </h5>

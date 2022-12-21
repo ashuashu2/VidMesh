@@ -12,6 +12,7 @@ import { LikesProvider } from "./context/LikesContext";
 import { FilterProvider } from "./context/FilterContext";
 import { AuthProvider } from "./context/AuthContext";
 import { HamburgerProvider } from "./context/HamburgerContext";
+import { PlaylistProvider } from "./context/PlayListContext";
 
 
 
@@ -21,6 +22,7 @@ makeServer();
 ReactDOM.render(
   <React.StrictMode>
     <HamburgerProvider>
+      <PlaylistProvider>
     <AuthProvider>
     <FilterProvider>
     <LikesProvider>
@@ -38,6 +40,7 @@ ReactDOM.render(
     </LikesProvider>
     </FilterProvider>
     </AuthProvider>
+    </PlaylistProvider>
     </HamburgerProvider>
   
   </React.StrictMode>,

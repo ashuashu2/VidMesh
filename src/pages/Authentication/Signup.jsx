@@ -29,6 +29,7 @@ const signupHandler=async()=>  {
 
 }
 
+
 if( firstName.length >= 1 && lastName.length >= 1 && email.length >= 1 && password.length >= 1 ){
   try {
     const response = await axios.post("/api/auth/signup", data)
@@ -37,6 +38,7 @@ if( firstName.length >= 1 && lastName.length >= 1 && email.length >= 1 && passwo
       navigate("/Login")
     
     toast.success("Signup Successfull You Can Login Now")
+    console.log(token)
     } catch (error) {
      toast.error("Signup Failed Please Try Again After Some Times ")
     }
