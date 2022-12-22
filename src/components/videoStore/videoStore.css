@@ -7,6 +7,14 @@
 
 
 }
+
+.search-div2{
+   
+display: none;
+
+}
+
+
 .right-side-buttons-div{
     margin-left: auto;
 
@@ -96,6 +104,9 @@ justify-content: space-between;
 
 
 @media screen and (max-width: 800px) { 
+    .videostore-main-div{
+        margin-top: -1.3rem;
+    }
 
 
     .header-button-div{
@@ -204,6 +215,26 @@ justify-content: space-between;
     
     flex-direction: column;
     justify-content: space-between;
+    
+    }
+    .nav-search2{
+        margin-bottom:2rem;
+        margin-top: -1rem;
+        
+        height: 3.4vh;
+        width: 97%;
+        border-radius: 2rem;
+
+        
+    
+    }
+    
+    .search-div2{
+        display: unset;
+        margin-right: 2.3rem;
+        margin-left: -1.2rem;
+        width: 100%;
+   
     
     }
  

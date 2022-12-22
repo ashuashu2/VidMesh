@@ -38,7 +38,13 @@ function VideoStore() {
 
 
   return (
-  <div>
+  <div className='videostore-main-div'>
+    <div className="search-div2">
+
+<input placeholder=" 🔍       Search your Videos" onChange={(event)=>
+FilterDispatch({type:"SEARCH",payload:event.target.value}) } className="nav-search2" type="text" />
+
+</div>
 
     <div className="header-button-div"> 
       <div className='left-side-buttons-div'>
