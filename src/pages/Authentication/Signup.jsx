@@ -62,7 +62,7 @@ if( firstName.length >= 1 && lastName.length >= 1 && email.length >= 1 && passwo
 
           <div className='signup-firstname-div'> 
               <small className='signup-firstname-label' >FIRSTNAME <small>*</small></small>
-            <input className=' signup-email-input'  onChange={(e) => setFirstName(e.target.value)}  placeholder="First Name" type="text" />
+            <input className=' signup-email-input signup-firstName-input'  onChange={(e) => setFirstName(e.target.value)}  placeholder="First Name" type="text" />
 
             </div>
            
@@ -72,7 +72,7 @@ if( firstName.length >= 1 && lastName.length >= 1 && email.length >= 1 && passwo
           <div className='signup-lastname-div'>
             <small className='signup-lastname-label'>LASTNAME <span>*</span></small>
             
-           <input className='signup-password-input' onChange={(e) => setLastName(e.target.value)}
+           <input className='signup-password-input signup-lastName-input' onChange={(e) => setLastName(e.target.value)}
  placeholder="Last Name" type="text" />
           </div>
 

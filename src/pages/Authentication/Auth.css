@@ -234,7 +234,7 @@
  margin-top: 0.7rem;
  color: red;
  font-weight: 600;
- margin-right: 4rem;
+ margin-right: 4.5rem;
  
  }
  
@@ -246,7 +246,7 @@
 
  color: red;
  font-weight: 600;
- margin-right: 4rem;
+ margin-right: 4.5rem;
  
  
  
@@ -285,6 +285,7 @@
  }
  .signup-name-div{
      margin-left: 2rem;
+     
  
  }
  
@@ -336,6 +337,7 @@
         background-size: cover;
         margin-left: 0rem;
         width: 100%;
+        
       
     }
 
@@ -348,9 +350,35 @@
         color: black;
         margin: unset;
         text-align:unset;
+        margin-bottom: 2rem;
     
     
         
     
     }
+    .signup-firstName-input{
+        width: 81%;
+
+    }
+    .signup-lastName-input{
+        width: 81%;
+
+    }
+    .signup-firstname-label{
+      
+     margin-right: 2.5rem;
+     
+     
+     }
+     
+     
+     .signup-lastname-label{
+        
+     margin-right: 2.5rem;
+     
+     
+     
+     
+     }
+
 }
