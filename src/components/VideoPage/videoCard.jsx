@@ -27,6 +27,9 @@ const {commentList,handleCommentAdd,handleCommentInput,initialComments,commentTe
 const { WatchLaterState , WatchLaterDispatch} = useWatchLater()
 const { LikesState , LikesDispatch} = useLikes()
 const { isLoggedIn} = useAuth()
+useEffect(() => {
+  window.scrollTo(0, 0)
+}, [])
 
 
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { GoVerified } from 'react-icons/go';
 
 
@@ -23,6 +23,9 @@ function VideoStore() {
   const { HistoryState , HistoryDispatch} = useHistory()
   const {LikesDispatch} = useLikes()
   const {FilterState,FilterDispatch}= useFilter()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
 
   const  FilterVideosByCategory = FilterByCategory(videos,FilterState.Category)

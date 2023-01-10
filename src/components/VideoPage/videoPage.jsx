@@ -2,8 +2,12 @@ import { useParams } from "react-router-dom"
 import { useVideos } from "../../context/videosContext"
 import { VideoCard } from "./videoCard"
 import "../VideoPage/videoCard.css"
+import { useEffect } from "react"
 
 function VideoDetail() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     const {videos} =useVideos()
     const {videoId} = useParams()
     function findDeatils (videos,videoId){

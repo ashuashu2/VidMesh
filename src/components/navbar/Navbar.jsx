@@ -11,6 +11,7 @@ import {  toast } from 'react-toastify';
 import { useFilter } from "../../context/FilterContext";
 import { useAuth } from "../../context/AuthContext";
 import { useHamburger } from "../../context/HamburgerContext";
+import { useEffect } from "react";
 
 
 
@@ -22,6 +23,9 @@ function Navbar(){
 const { isLoggedIn, setIsLoggedIn } = useAuth();
 const navigate = useNavigate();
 const location = useLocation();
+useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
 const {FilterState,FilterDispatch} = useFilter()
 
