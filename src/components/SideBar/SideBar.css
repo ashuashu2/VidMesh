@@ -49,11 +49,11 @@
         width: 95%;
         height: 100vh;
         margin-left: 0rem;
-        background-color: rgb(139, 150, 160);
+        background-color: rgb(210, 217, 224);
 
         margin: 0rem;
         box-shadow: 0.2px 0px 0px 0px;
-        margin-top: -3.6rem;
+        margin-top: 0.9rem;
         position: fixed;
         top: 61px;
         padding-right: 0rem;
@@ -76,7 +76,7 @@
 
         margin: 0rem;
         box-shadow: 0.2px 0px 0px 0px;
-        margin-top: -3.6rem;
+        margin-top: 0.9rem;
         position: fixed;
         top: 61px;
         padding-right: 0rem;
