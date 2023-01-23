@@ -19,7 +19,7 @@ function SideBar() {
 
 
 return (
-<div className=  {isMobile ?  "side-icon-div" : "side-iconss"} >
+<div className=  {isMobile ?  "side-icon-div" : "side-icons-div2"} >
   
   <Link className="side-bar-links" to="/">
   <div className="side-bar-icons-div">

@@ -23,12 +23,21 @@ button{
 
 
 .sideBar-home-div{
+  z-index: 2;
   width: 8%;
+
+
+}
+.sideBar-home-div2{
+  z-index: 8;
+
 
 
 }
 .routes-div{
   width: 92%;
+  z-index: 4;
+
 
 }
 .responsiveNavbar{
@@ -39,18 +48,30 @@ display: none;
 @media screen and (max-width: 800px) { 
   
 .sideBar-home-div{
-  /* display: none; */
+
   width: 0%;
+  z-index: 0;
   
+
+
+}
+.sideBar-home-div2{
+  z-index: 8;
+
 
 
 }
 
 .routes-div{
   width: 100%;
-  z-index: 1;
+  z-index: 5;
 }
-
+.navbar{
+  z-index: 50;
+}
+.footerss-div{
+  z-index: 50;
+}
 
 
 

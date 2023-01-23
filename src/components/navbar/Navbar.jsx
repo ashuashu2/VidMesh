@@ -66,23 +66,17 @@ return(
                     className="login-button">
                     Login
                 </button> </NavLink>) } </div>
-                <div className="hamburger">
-                    {  isMobile ? <div onClick={hamburgerHandler} >
-            <h1 className="cross-icon">
+
                 
-                <ImCross />
-            </h1>
-
-        </div> :
-        <div onClick={hamburgerHandler} >
-        <h1>
-           
-            <GiHamburgerMenu />
-        </h1>
-
-    </div> }
-
-
+                <div className="hamburger">
+                    {  isMobile ?
+                     <div onClick={hamburgerHandler} >
+                         <h1 className="cross-icon"> <ImCross /> </h1>
+                    </div> :
+                    <div onClick={hamburgerHandler} >
+                        <h1 className="hamburger-icon"><GiHamburgerMenu />
+                        </h1>
+                    </div> }
                 </div>
 
 

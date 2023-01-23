@@ -23,16 +23,18 @@ import { Modal } from "./pages/playLists/Modal/Modal";
 import { useAuth } from "./context/AuthContext";
 import { usePlaylist } from "./context/PlayListContext";
 import PlaylistPage from "./pages/playLists/playlistPage";
+import { useHamburger } from "./context/HamburgerContext";
 
 
 function App() {
+  const {isMobile } = useHamburger()
 
  return (
     <div className="App">
 
       <div  className="navbar"> <Navbar /> </div>
       <div className="main-container">
-      <div className="sideBar-home-div" >
+      <div className={isMobile ?  "sideBar-home-div2" : "sideBar-home-div"}>
 
        
             <SideBar  />
@@ -67,8 +69,8 @@ function App() {
       </div>
        
        </div>
+      <div className="footerss-div"> <Footer  /> </div>
       
-      <Footer />
       <ToastContainer position="top-center" autoClose={2500} hideProgressBar={false} newestOnTop={false} closeOnClick
     rtl={false} pauseOnFocusLoss draggable pauseOnHover />      
       
