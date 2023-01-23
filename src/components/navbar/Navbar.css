@@ -246,8 +246,9 @@ cursor: pointer;
 }
 .cross-icon{
     color: black;
-    font-size: 1.5em;
+    font-size: 2em;
     margin-top: 2rem;
+    transition: 1.2s ease;
 }
 .hamburger-icon{
     color: white;

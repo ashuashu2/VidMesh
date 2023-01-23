@@ -48,9 +48,8 @@
     .side-icon-div {
         width: 95%;
         height: 100vh;
-        z-index: 100;
-        background-color: rgb(247, 244, 244);
         margin-left: 0rem;
+        background-color: rgb(139, 150, 160);
 
         margin: 0rem;
         box-shadow: 0.2px 0px 0px 0px;
@@ -70,12 +69,9 @@
     }
 
     .side-icons-div2{
-        z-index: 1;
         transition: 1s ease;
         width: 0%;
       
-        z-index: 100;
-        background-color: rgb(247, 244, 244);
         margin-left: 0rem;
 
         margin: 0rem;
@@ -92,6 +88,7 @@
     .side-bar-icons-div {
         width: 50%;
         margin-left: 2rem;
+       
 
     }
 
@@ -100,6 +97,7 @@
         text-decoration: none;
         background-color: rgb(230, 36, 36);
         width: 50%;
+        
 
 
 

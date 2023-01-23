@@ -36,7 +36,7 @@ button{
 }
 .routes-div{
   width: 92%;
-  z-index: 4;
+
 
 
 }
@@ -67,10 +67,13 @@ display: none;
   z-index: 5;
 }
 .navbar{
-  z-index: 50;
-}
+   z-index: 4;
+   width: 100%;
+  }
 .footerss-div{
-  z-index: 50;
+   z-index: 4;
+  width: 100%;
+
 }
 
 
