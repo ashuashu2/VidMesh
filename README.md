@@ -1,10 +1,10 @@
-# Media-Cafe 
+# Vidmesh.com
 
  A video library where you can like,dislike,comment,create playlist, and add the videos to watch later.
 
-[Live Link](https://media-cafe.vercel.app/)
+[Live Link](https://vidmesh-com.vercel.app//)
  
-![mediacafe2](https://user-images.githubusercontent.com/101793920/198873698-156be378-a26e-43f9-a797-390464434d6a.png)
+![mediacafe2](/src/images/background.jpg)
 
 # Pages Till Now
 
@@ -63,8 +63,8 @@ Signup Page
 * Address details feilds.
 * Signin User.
 * Personal details fields.
-
-![signuppage](https://user-images.githubusercontent.com/101793920/198875049-05eb6010-7d9c-4bb8-87c7-732d4de870e5.png)
+<!-- 
+![signuppage](https://user-images.githubusercontent.com/101793920/198875049-05eb6010-7d9c-4bb8-87c7-732d4de870e5.png) -->
 
 Login Page
 * Add details feilds.
@@ -74,19 +74,19 @@ Login Page
 404 page
 * 404 page for unknown route
 
-![404page](https://user-images.githubusercontent.com/101793920/198874995-3675e690-8747-4855-be3e-59792f42d102.png)
+<!-- ![404page](https://user-images.githubusercontent.com/101793920/198874995-3675e690-8747-4855-be3e-59792f42d102.png) -->
 
 # Technology
 * React.
 * CSS.
 * javaScript.
 
-![comment](https://user-images.githubusercontent.com/101793920/198875938-48e824fa-312d-445a-afeb-efe43b829845.png)
+<!-- ![comment](https://user-images.githubusercontent.com/101793920/198875938-48e824fa-312d-445a-afeb-efe43b829845.png)
 
-![videopage](https://user-images.githubusercontent.com/101793920/198875352-d950a975-e2b8-4c41-9173-c66b9f3d244d.png)
+![videopage](https://user-images.githubusercontent.com/101793920/198875352-d950a975-e2b8-4c41-9173-c66b9f3d244d.png) -->
 
 # Author 
-[Naman Jain](https://github.com/Nmnjainsite)
+[Ashutosh Birthare](https://github.com/ashuashu2/VidMesh)
 
 # 👨‍💻 Connect with me
-[Linkedin](https://www.linkedin.com/in/naman-jain-97382b231/) [Twitter](https://twitter.com/NamanJa83726591)
+[Linkedin](https://www.linkedin.com/in/ashutosh-birthare/) 
