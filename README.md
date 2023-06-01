@@ -120,6 +120,7 @@ Login Page
 ![Screen Capture 033 - VidMesh com - vidmesh-com vercel app](https://github.com/ashuashu2/VidMesh/assets/86846323/26d14097-ae58-4c94-a0e6-7988413fb5ff)
 
 
+![Error 404](https://github.com/ashuashu2/VidMesh/assets/86846323/dfef9f5d-5867-41e0-b7ad-a5c0874d5429)
 
 
 
